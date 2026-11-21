@@ -10,6 +10,19 @@ Ultimate and ts23d are MIT-licensed developerz-ai projects built for coding agen
 | 3D assets from code | [ts23d](https://github.com/developerz-ai/ts23d) | glTF/GLB files | Blender, DCC tools, asset stores, other generators |
 | Generated images and video | [Kubeez](https://kubeez.com) (partner) | Image and video files | Local GPU models, other hosted generators, human artists |
 
+## 🥟 One toolchain with Bun
+
+`ag`, [Ultimate](https://github.com/developerz-ai/ultimate) and [ts23d](https://github.com/developerz-ai/ts23d) all run on Bun. A developer who picks them installs one runtime, and an agent uses one language for build glue, the game's website and asset recipes.
+
+| Layer | Language |
+|---|---|
+| Engine, simulation, game client and game server | C++23, plus Lua for scripts |
+| `ag` and repo scripts | Bun + TypeScript, as glue |
+| Optional website, portal and admin | Bun + TypeScript through Ultimate |
+| Optional 3D asset recipes | Bun + TypeScript through ts23d |
+
+Shared TypeScript types for a game's web API can be generated from the engine schema. Using Ultimate or ts23d stays optional, and shipped game binaries never contain Bun.
+
 ## 🌐 Ultimate: the web side of a game
 
 Bun + Postgres + SolidJS full-stack framework. One `action` declaration projects into an HTTP route, OpenAPI operation, typed client, job handle, MCP tool and test, behind one `policy`.
