@@ -1,6 +1,6 @@
 # 003 — Headers plus PCH by default, named modules opt-in
 
-Status: proposed
+Status: accepted
 Date: 2026-11-21
 
 ## Context
@@ -14,4 +14,4 @@ Headers with PCH by default. A package may opt in to named modules after every P
 - Unity builds only: why not, incremental rebuilds suffer, and agents rebuild constantly.
 
 ## Consequences
-Re-check at each engine major version. Accepted once MSVC and Apple Clang are tested.
+Re-check at each engine major version. Phase 0 must prove it on MSVC and Apple Clang, and a failure reopens this record.

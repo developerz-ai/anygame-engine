@@ -8,7 +8,7 @@ Each layer depends only on layers below it. Tooling (CLI, live viewer, asset pip
 
 Rails won by making the common path one command and the uncommon path possible. AnyGame copies four habits:
 
-- **Convention over configuration.** A default project layout (`game/`, `client/`, `content/`, `server/`, `schema/`, `tests/`; see [project organisation](24-project-organization.md)). Put a component in `game/components/` and it is reflected, serialised, replicated and visible in the editor with no registration code.
+- **Convention over configuration.** A default project layout (`game/`, `client/`, `content/`, `server/`, `schema/`, `tests/`; see [project organisation](24-project-organization.md)). Put a component in `game/components/` and it is reflected, serialised, replicated and visible in `ag describe` and the live viewer with no registration code.
 - **Generators.** `ag new mygame --kit mmo`, `ag generate ability Fireball`, `ag generate service matchmaking` create working, tested code that follows house style.
 - **Full stack in the box.** Client, dedicated server, database migrations, background jobs and deployment descriptors come from the same project and run locally with `ag dev`.
 - **Escape hatches everywhere.** Each convention is a default module that can be replaced ([section 5](05-extending.md)).
@@ -25,4 +25,4 @@ Rails won by making the common path one command and the uncommon path possible. 
 | Consoles | Vendor APIs | Shipped as private packages under NDA; proves the platform layer is a plugin |
 | Web | WebGPU + WASM | Optional package, 2D and light 3D. The kernel compiles to `wasm32` from Phase 0 ([platforms](30-platforms.md)) |
 
-One shader source language (Slang or HLSL) cross-compiles to DXIL, SPIR-V and Metal. Three renderer tiers (mobile forward, desktop clustered, high-end virtual geometry with ray tracing) share the same materials and scene data, so one project scales from a phone to a high-end PC.
+One shader source language (Slang or HLSL, [open question 9](../build/open-questions.md)) cross-compiles to DXIL, SPIR-V, Metal and WGSL. Three renderer tiers (mobile forward, desktop clustered, high-end virtual geometry with ray tracing) share the same materials and scene data, so one project scales from a phone to a high-end PC.

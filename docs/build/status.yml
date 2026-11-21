@@ -3,25 +3,44 @@
 project: anygame-engine
 stage: design
 last_updated: 2026-11-21
-current_focus: settle Phase 0 open questions
+current_focus: phase-0-01-build-ci-platform.md
 phases:
   - id: 0
     name: Kernel
     doc: phase-0-kernel.md
     status: not_started
-    blocked_by_open_questions: [1, 2, 3, 4, 16]
+    blocked_by_open_questions: []
     evidence: []
+    slices:
+      - file: phase-0-01-build-ci-platform.md
+        status: not_started
+        blocked_by_open_questions: [19]
+      - file: phase-0-02-memory.md
+        status: not_started
+      - file: phase-0-03-registry-ports.md
+        status: not_started
+      - file: phase-0-04-reflection-schema.md
+        status: not_started
+      - file: phase-0-05-ecs.md
+        status: not_started
+      - file: phase-0-06-jobs.md
+        status: not_started
+      - file: phase-0-07-clocks-snapshots.md
+        status: not_started
+      - file: phase-0-08-ag-cli.md
+        status: not_started
+        blocked_by_open_questions: [18]
   - id: 1
     name: 2D stack
     doc: phase-1-2d.md
     status: not_started
-    blocked_by_open_questions: [5, 6, 7, 8]
+    blocked_by_open_questions: []
     evidence: []
   - id: 2
     name: Determinism
     doc: phase-2-determinism.md
     status: not_started
-    blocked_by_open_questions: [4]
+    blocked_by_open_questions: []
     evidence: []
   - id: 3
     name: 3D desktop

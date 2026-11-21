@@ -1,6 +1,6 @@
 # Phase 4: Backend
 
-**Proves:** the Rails promise. **Depends on:** Phase 3. **Read:** [online](../idea/09-online.md), [architecture](../idea/03-architecture.md).
+**Proves:** the Rails promise. **Depends on:** Phase 3. **Read:** [online](../idea/09-online.md), [architecture](../idea/03-architecture.md), [client and server models](../idea/35-client-server-models.md), [idea to distribution](../idea/25-idea-to-distribution.md).
 
 ## Build order
 

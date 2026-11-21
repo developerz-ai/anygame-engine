@@ -8,5 +8,5 @@ A world is a database of entities partitioned in space and in layers; what is lo
 - **Data layers.** Named layers toggle sets of entities at runtime: mission states, seasons, MMO phasing, destroyed vs. intact city blocks.
 - **Simulation LOD.** Three bands. Near: full entities. Mid: simplified agents (traffic as splines, NPCs as schedules). Far: statistical (population counts per district). Entities are promoted and demoted as the player moves. This is how an open world feels alive beyond the visible radius.
 - **Terrain.** Heightfield, mesh-based terrain with overhangs and caves, and voxel terrain are three interchangeable modules behind one "ground query" interface.
-- **Procedural content.** A node-graph PCG framework that runs in-editor, at cook time, or at runtime, always from a seed. Rule-based placement (Decima), wave-function collapse, road and building generators, biome vegetation growth.
+- **Procedural content.** A node-graph PCG framework that runs from tools, at cook time, or at runtime, always from a seed. Rule-based placement (Decima), wave-function collapse, road and building generators, biome vegetation growth.
 - **Interiors and seams.** Portals and rooms as a streaming and visibility primitive; seamless interior/exterior with no load screen.

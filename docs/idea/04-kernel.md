@@ -1,6 +1,6 @@
 # ⚙️ 4. Core runtime (the kernel)
 
-The kernel is the only code every game ships. It has five parts and a hard size budget of about 30k lines of C++23.
+The kernel is the only code every game ships. It has six parts (memory, jobs, data model with snapshots, reflection, [registry](05-extending.md#api-registry) and time) and a hard size budget of about 30k lines of C++23 for the shipped runtime ([decision 011](../decisions/011-kernel-scope-and-budget.md)).
 
 ## Memory
 
@@ -12,7 +12,8 @@ The kernel is the only code every game ships. It has five parts and a hard size 
 
 - Fibre-based work-stealing scheduler; no privileged main thread (id Tech, Naughty Dog).
 - Systems declare read and write sets on component types. The scheduler builds the dependency graph and runs non-conflicting systems in parallel (Bevy, Unity DOTS).
-- A deterministic mode fixes job ordering and merge order so parallel execution gives bit-identical results.
+- A deterministic mode fixes job ordering and merge order so parallel execution gives bit-identical results, within the [promised tier](../decisions/012-determinism-guarantee-tiers.md).
+- A thread-only mode runs without fibres, for the browser and for race detection.
 
 ## Data model: archetype ECS plus a scene tree view
 
@@ -37,7 +38,7 @@ The kernel owns clocks, not a game loop. A game's manifest chooses a loop module
 |---|---|---|
 | `loop.variable` | Variable delta, interpolated | Casual, narrative, most single-player |
 | `loop.fixed` | Fixed tick with render interpolation and sub-stepping | Racing, physics-heavy, shooters |
-| `loop.deterministic` | Fixed tick, fixed-point or strict-IEEE maths, ordered jobs, snapshot/restore | Fighting, RTS, factory, replays |
+| `loop.deterministic` | Fixed tick, fixed-point, software-float or strict-IEEE maths by tier, ordered jobs, snapshot/restore | Fighting, RTS, factory, replays |
 | `loop.turn` | Advances on commands, not time | Card, board, tactics |
 | `loop.audio` | Audio clock is master | Rhythm |
 

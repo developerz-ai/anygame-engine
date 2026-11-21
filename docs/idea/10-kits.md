@@ -8,7 +8,7 @@ A genre kit is a package that selects modules, sets conventions and ships a play
 |---|---|---|---|
 | `kit.platformer2d` | fixed | none / rollback | Kinematic controller, tilemaps, input buffering, pixel camera |
 | `kit.topdown2d` | fixed | replication | Tilemaps, 2D lighting, inventory |
-| `kit.fighting` | deterministic | rollback | Frame data editor, hitbox tools, training mode |
+| `kit.fighting` | deterministic | rollback | Frame data and hitbox tools as text and commands, training mode |
 | `kit.fps` | fixed | replication | Lag compensation, weapon framework, bot AI |
 | `kit.thirdperson` | fixed | optional | Motion matching, camera rigs, melee combat timeline |
 | `kit.rts` | deterministic | lockstep | Flow fields, fog of war, selection and command UI, replays |
@@ -18,8 +18,9 @@ A genre kit is a package that selects modules, sets conventions and ships a play
 | `kit.cardgame` | turn | server-authoritative commands | Rules engine, deck data, animation queue |
 | `kit.builder` | deterministic | lockstep | Grid placement, agent sim, production chains |
 | `kit.survival` | fixed | replication | Voxel or heightfield terrain, crafting, building, needs |
-| `kit.narrative` | variable | none | Script language, branching, localisation, backlog |
+| `kit.narrative` | variable | none | Existing script language through an adapter, branching, localisation, backlog |
 | `kit.mmo` | fixed | mmo | Full backend, zones, instancing, economy, guilds |
+| `kit.moba` | fixed or deterministic | `orders` profile | Fog of war, data-driven abilities, lane and wave AI, items, replays, spectator relay |
 | `kit.mobile-casual` | variable | async services | Small binary, live ops, offline progress, store integration |
 
 Kits compose: GTA Online is roughly `kit.openworld` + `kit.fps` + `kit.racing` + `kit.mmo`.

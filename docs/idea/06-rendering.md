@@ -35,7 +35,7 @@ Unreal 5.8 added an irradiance-field GI mode aimed at 60 fps on handhelds, which
 
 ## UI
 
-Two modules: a retained, data-bound, styleable UI for game HUDs and menus (flexbox layout, animation, localisation, controller navigation), and an immediate-mode UI for tools and debug. The editor is built with the same UI the games use.
+Two modules: a retained, data-bound, styleable UI for game HUDs and menus (flexbox layout, animation, localisation, controller navigation), and an immediate-mode UI for tools and debug. The live viewer and debug tools use the same UI modules as games.
 
 ## VFX
 

@@ -14,4 +14,4 @@ The phase order lives in [docs/build/](../build/README.md).
 
 ## What not to build
 
-A new programming language, a new version-control system, a new physics solver from scratch, a new DCC tool, or a second object model beside the ECS.
+A new programming language, a new version-control system, a new physics solver from scratch, a new DCC tool, or a second object model beside the ECS. Small kinematic controllers and adapters over existing languages are fine ([decision 014](../decisions/014-wrap-solvers-and-languages.md)).

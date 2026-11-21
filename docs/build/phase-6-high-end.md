@@ -1,6 +1,6 @@
 # Phase 6: High-end
 
-**Proves:** AAA visuals. **Depends on:** Phases 3 and 5. **Read:** [rendering](../idea/06-rendering.md), [simulation](../idea/08-simulation.md).
+**Proves:** AAA visuals. **Depends on:** Phases 3 and 5. **Read:** [rendering](../idea/06-rendering.md), [simulation](../idea/08-simulation.md), [next-gen techniques](../idea/17-next-gen-techniques.md), [small and fast](../idea/21-small-and-fast.md).
 
 ## Build order
 
