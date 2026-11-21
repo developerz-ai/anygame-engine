@@ -4,7 +4,7 @@ Open-source, AI-first game engine: small C++23 kernel + replaceable modules. A g
 
 **Objective: we provide the building blocks that help developers and their agents build their game. We never stand between them and it.** New blocks must not change the architecture: a feature needing a kernel edit means a missing extension point. When a choice trades the developer's control for engine convenience, control wins.
 
-**Humans bring ideas. Coding agents use the kernel and modules to build any 2D or 3D game.** Everything is pluggable, extendable and replaceable. Agents are the primary user of every API, error and command: `docs/idea/18-agent-dev-cycle.md`. Think `developerz-ai/ultimate` for games: same agent experience, but every part replaceable.
+**Humans bring ideas. Coding agents use the kernel and modules to build any 2D or 3D game.** Everything is pluggable, extendable and replaceable. Agents are the primary user of every API, error and command: `docs/idea/18-agent-dev-cycle.md`. Think `developerz-ai/ultimate` for games: same agent experience, but every part replaceable. AnyGame is a toolbox: the developer's agent picks what the game needs.
 
 **Current stage: docs only.** No engine code, build, or tests exist. Do not scaffold code until asked.
 

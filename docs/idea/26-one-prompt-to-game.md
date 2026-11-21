@@ -4,6 +4,8 @@
 
 Planned design as of 2026-11. Nothing here runs yet.
 
+**AnyGame is a toolbox, and the developer's agent is the one using it.** The agent picks the tools the game needs and leaves the rest in the box. The toolbox never decides what the game is.
+
 ## What the agent has ready
 
 | Know-how | Answers | Source |

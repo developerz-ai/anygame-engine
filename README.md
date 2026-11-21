@@ -2,7 +2,7 @@
 
 > **We provide the building blocks for your game. We never stand between you and it.**
 >
-> A small kernel. Replaceable everything else. Built for coding agents.
+> A toolbox for your coding agent: a small kernel, replaceable blocks, and the know-how to use them.
 
 AnyGame is an open-source game engine design: a roughly 30k-line C++23 kernel plus a catalogue of replaceable modules. A game is a manifest that picks which modules to load, so a pixel-art platformer never pays for virtual geometry and an RTS never fights a variable-step loop.
 
