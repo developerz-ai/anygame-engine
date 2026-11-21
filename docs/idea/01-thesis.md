@@ -28,6 +28,7 @@ AnyGame bakes in none of them. The kernel knows about memory, jobs, data, reflec
 9. **Small and fast by default.** Faster hardware should buy a better game, not a heavier one. Every byte and millisecond must reach the player, and the engine makes each one's price visible ([small and fast](21-small-and-fast.md)).
 10. **Ready for the future.** Bet on nothing permanently. New hardware, APIs and models arrive as adapters, and old games and saves keep working ([future-ready](22-future-ready.md)).
 11. **No regrets.** No fees, lock-in, forced upgrades, hidden telemetry or overclaiming. A developer can always leave with everything ([no regrets](31-no-regrets.md)).
+12. **Fast and correct.** Agents supply development speed, so the engine spends its design on performance and quality. SOLID at the boundaries, data-oriented in hot paths ([quality bar](32-quality-bar.md)).
 
 ## What "any game" honestly means
 

@@ -6,7 +6,7 @@
 
 AnyGame is an open-source game engine design: a roughly 30k-line C++23 kernel plus a catalogue of replaceable modules. A game is a manifest that picks which modules to load, so a pixel-art platformer never pays for virtual geometry and an RTS never fights a variable-step loop.
 
-**Humans bring ideas. Coding agents build them.** AnyGame is designed so an agent can create any kind of 2D or 3D game, with every part pluggable, extendable and replaceable. Think [Ultimate](https://github.com/developerz-ai/ultimate), but for games.
+**Humans bring ideas. Coding agents build them.** AnyGame distils the best ideas from 30 years of game engines into primitives an agent can use to create any kind of next-gen 2D or 3D game, with every part pluggable, extendable and replaceable. Think [Ultimate](https://github.com/developerz-ai/ultimate), but for games.
 
 > 🚧 **Status: design stage.** This repo currently holds the architecture and build plan. There is no engine code to run yet, every performance number is a target, and the project is not maintained until it is ready.
 
@@ -41,6 +41,7 @@ Monolithic engines bake in one answer to four questions, and each answer rules o
 - 🔁 **Every game makes it better:** real problems become better blocks, errors and playbooks for the next game. Sharing is always opt-in.
 - 🤝 **No regrets:** MIT, no royalties, no lock-in, no forced upgrades, no hidden telemetry. You can always leave with everything.
 - 📱 **Every platform:** Linux, Windows, macOS, Android, iPhone and the browser (WebAssembly + WebGPU) from one project.
+- 🎯 **No more unoptimized or buggy games:** agents bring the dev speed, so the engine focuses on performance and correctness. SOLID at the boundaries, data-oriented in hot paths.
 - 🙌 **Help, then get out of the way:** every kit, convention, gate and recommendation is a default your game can override.
 - 🛡️ **Fair play without ring-0:** server authority and server-side detection, no kernel anti-cheat.
 
@@ -69,6 +70,7 @@ $ ag query "Player.Transform, Player.Velocity" --at tick=120
 - 🧱 **[Primitives](docs/idea/23-primitives.md):** everything planned for the game client, game server and backend.
 - 🗂️ **[Project organisation](docs/idea/24-project-organization.md):** how agents structure a game, from jam to live service.
 - 🚢 **[Idea to distribution](docs/idea/25-idea-to-distribution.md):** the full cycle, from pitch and project management to stores and live ops.
+- 🎯 **[Quality bar](docs/idea/32-quality-bar.md):** how performance and correctness are enforced.
 - 🧠 **[C++23 craft](docs/idea/16-cpp23-craft.md):** memory, RAII, sanitizers, testing.
 - 🧭 **[C++ decisions](docs/idea/29-cpp-decisions.md):** lookup tables, so any model makes the high-return choice.
 - 🧰 **[Libraries and profilers](docs/idea/28-libraries-and-profilers.md):** the best allocators, libraries and profilers, one default per need.

@@ -15,7 +15,10 @@ bin/check          # the gate CI runs: lint, types, tests, then links, anchors, 
 bin/check --json   # same, with docs errors as JSON on stdout
 bun run fmt        # format and fix scripts
 ```
-Repo tooling is Bun + TypeScript in `scripts/`. No Python. The engine itself is C++23.
+Repo tooling is Bun + TypeScript. No Python. The engine itself is C++23.
+- `scripts/*.ts`: thin entry points, each with a one-line doc comment. List them: `bun run help`.
+- `scripts/lib/**/*.ts`: reusable modules, one job each, under 200 lines, tested beside the source. Lift shared logic here.
+- Subprocesses go through `scripts/lib/run.ts`. Expected failures throw `ScriptError` with a code and `fix`. Every script supports `--json`.
 CI: `.github/workflows/ci.yml`, job `verify`. Review config: `.coderabbit.yml`.
 
 C++: follow `docs/idea/29-cpp-decisions.md` first (decisions already made), then `docs/idea/16-cpp23-craft.md`. Allocators, libraries, profilers: `docs/idea/28-libraries-and-profilers.md`. Optional companion tools are recommended, never required: `docs/idea/19-companion-tools.md`.
@@ -59,6 +62,7 @@ Full text: `docs/idea/01-thesis.md`.
 - Small and fast by default. Every byte and millisecond must reach the player. Show the cost of each change: `docs/idea/21-small-and-fast.md`.
 - Huge catalogue, tiny build. Give agents many ready blocks, and ship only what a game loads: `docs/idea/23-primitives.md`.
 - Do not reinvent the wheel. Find, use, configure, compose, wrap, replace, then improve with evidence: `docs/idea/18-agent-dev-cycle.md`.
+- SOLID/SRP at boundaries, performance first in hot paths. Abstract per batch, never per entity. Done means tested, in budget, sanitizer-clean: `docs/idea/32-quality-bar.md`.
 - No regrets. No fees, lock-in, forced upgrades, hidden telemetry or overclaiming: `docs/idea/31-no-regrets.md`.
 - Platforms: Linux, Windows, macOS, Android, iPhone and browser (WASM + WebGPU). The kernel must compile to `wasm32`. OS differences stay behind ports: `docs/idea/30-platforms.md`.
 - Future-ready. No hard-coded ceilings, version everything that persists, every dependency has an exit: `docs/idea/22-future-ready.md`.

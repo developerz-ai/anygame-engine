@@ -5,6 +5,7 @@
   "scripts": {
     "check": "bin/check",
     "check:docs": "bun scripts/check-docs.ts",
+    "help": "bun scripts/help.ts",
     "fmt": "biome check --write scripts",
     "lint": "biome check scripts",
     "test": "bun test scripts",

@@ -2,7 +2,7 @@ import { afterEach, beforeEach, describe, expect, test } from 'bun:test';
 import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
-import { checkDocs, githubSlug } from './check-docs';
+import { checkDocs } from './check';
 
 describe('checkDocs', () => {
   let root: string;
@@ -20,7 +20,7 @@ describe('checkDocs', () => {
     mkdirSync(dirname(path), { recursive: true });
     writeFileSync(path, content);
   };
-  const codes = () => checkDocs(root).map((error) => error.code);
+  const codes = () => checkDocs(root).map((finding) => finding.code);
 
   test('clean docs pass', () => {
     write('docs/idea/README.md', '[A](a.md#-hello-world)\n');
@@ -33,8 +33,8 @@ describe('checkDocs', () => {
     expect(codes()).toEqual(['broken-link']);
   });
 
-  test('link outside the repo is broken', () => {
-    write('outside-target.md', '# x\n');
+  test('link outside the repo is broken, even when the target exists', () => {
+    writeFileSync(join(dirname(root), 'outside.md'), '# x\n');
     write('a.md', '[x](../outside.md)\n');
     expect(codes()).toEqual(['broken-link']);
   });
@@ -55,14 +55,14 @@ describe('checkDocs', () => {
     expect(codes()).toEqual(['unindexed-doc']);
   });
 
+  test('indexed folder with no README', () => {
+    write('docs/build/phase.md', '# Phase\n');
+    expect(codes()).toEqual(['missing-index']);
+  });
+
   test('table with the wrong cell count', () => {
     write('a.md', '| x | y |\n|---|---|\n| 1 | 2 | 3 |\n');
     expect(codes()).toEqual(['table-columns']);
-  });
-
-  test('escaped pipe stays in one cell', () => {
-    write('a.md', '| x | y |\n|---|---|\n| a\\|b | 2 |\n');
-    expect(codes()).toEqual([]);
   });
 
   test('unclosed fence', () => {
@@ -73,18 +73,13 @@ describe('checkDocs', () => {
   test('a secret is reported without its value', () => {
     const token = `ghp_${'a'.repeat(36)}`;
     write('notes.txt', `token=${token}\n`);
-    const errors = checkDocs(root);
-    expect(errors.map((error) => error.code)).toEqual(['secret']);
-    expect(JSON.stringify(errors)).not.toContain(token);
+    const findings = checkDocs(root);
+    expect(findings.map((finding) => finding.code)).toEqual(['secret']);
+    expect(JSON.stringify(findings)).not.toContain(token);
   });
 
   test('binary files are skipped', () => {
     writeFileSync(join(root, 'image.bin'), Buffer.from([0xff, 0xfe, 0x00, 0x80]));
     expect(codes()).toEqual([]);
   });
-});
-
-test('slug matches GitHub', () => {
-  expect(githubSlug('🔥 Profilers: which one?')).toBe('-profilers-which-one');
-  expect(githubSlug('⚙️ 4. Core runtime')).toBe('-4-core-runtime');
 });

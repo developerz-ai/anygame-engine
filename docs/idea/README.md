@@ -4,7 +4,7 @@ The AnyGame architecture blueprint, one section per file. Blueprint date: 2026-1
 
 | # | Doc | Read before |
 |---|---|---|
-| 1 | [Thesis](01-thesis.md) | Anything. Holds the objective and eleven design rules |
+| 1 | [Thesis](01-thesis.md) | Anything. Holds the objective and twelve design rules |
 | 2 | [Prior art](02-prior-art.md) | Designing a module: what each genre and engine solved |
 | 3 | [Architecture](03-architecture.md) | Project layout, generators, platforms |
 | 4 | [Kernel](04-kernel.md) | Memory, jobs, ECS, reflection, clocks |
@@ -35,4 +35,5 @@ The AnyGame architecture blueprint, one section per file. Blueprint date: 2026-1
 | 29 | [C++ decisions](29-cpp-decisions.md) | Writing any C++: the answers are already chosen |
 | 30 | [Platforms](30-platforms.md) | Anything OS-specific: Linux, Windows, macOS, Android, iPhone, browser |
 | 31 | [No regrets](31-no-regrets.md) | Any choice affecting licensing, lock-in, upgrades or trust |
+| 32 | [Quality bar](32-quality-bar.md) | SOLID vs performance, and what "done" means |
 | | [Sources](sources.md) | Checking a claim |
