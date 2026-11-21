@@ -61,6 +61,7 @@ Every command accepts `--json`. Errors carry `code`, `message`, `file`, `line`, 
 - No unbounded log in default output.
 - No private kernel API used by `ag` or `ag-host`.
 - No compile step for `ag`, and no heavy dependency loaded at startup.
+- No engine logic in TypeScript. `ag` is glue like bash: it calls CMake, Ninja, compilers, tests and `ag-host`, then formats results.
 - No network access or telemetry.
 
 ## Done when

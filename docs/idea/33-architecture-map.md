@@ -44,6 +44,7 @@ Adapters implement ports and may call vendor code. Domain modules call other mod
 | Simulation and render | Extract step copies data one way | Simulation reading render state |
 | Determinism | Deterministic systems use World clock and RNG | Wall clock, unordered iteration, `ai.llm` |
 | Tools | Use the public command protocol | Tooling code paths in the runtime |
+| Bun (`ag`, `scripts/`) | Orchestrate CMake, Ninja, compilers, tests and native tools, like bash | Engine, simulation, rendering, cooking or game logic in TypeScript |
 | First-party code | The same public APIs as everyone | Private APIs |
 
 CI should enforce these with an include-graph check once code exists.
