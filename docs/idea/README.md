@@ -38,4 +38,5 @@ The AnyGame architecture blueprint, one section per file. Blueprint date: 2026-1
 | 32 | [Quality bar](32-quality-bar.md) | SOLID vs performance, and what "done" means |
 | 33 | [Architecture map](33-architecture-map.md) | Deciding where code goes and what may depend on what |
 | 34 | [Load, cache, unload](34-resource-lifecycle.md) | Anything that loads: lazy loading, streaming, caching, eviction |
+| 35 | [Client and server models](35-client-server-models.md) | Any online feature: authority, visibility, reconnects, spectators |
 | | [Sources](sources.md) | Checking a claim |

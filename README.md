@@ -44,6 +44,7 @@ Monolithic engines bake in one answer to four questions, and each answer rules o
 - 🎯 **No more unoptimized or buggy games:** agents bring the dev speed, so the engine focuses on performance and correctness. SOLID at the boundaries, data-oriented in hot paths.
 - ♻️ **Load on demand, cache, unload:** nothing stays in memory unless the player is about to need it.
 - 🏅 **Good games by default:** kits, playbooks and scorecards make the high-quality path the easy one.
+- ⚔️ **Serious online by design:** server authority, per-field fog of war, reconnects, replays and spectators, from small matches to persistent worlds.
 - 🙌 **Help, then get out of the way:** every kit, convention, gate and recommendation is a default your game can override.
 - 🛡️ **Fair play without ring-0:** server authority and server-side detection, no kernel anti-cheat.
 

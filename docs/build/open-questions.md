@@ -24,6 +24,7 @@ Conflicts and gaps found while splitting the blueprint. The idea docs keep the o
 | 10 | Roadmap | When do the other kits land? | Seven of the 15 kits have no phase: `topdown2d`, `rpg`, `cardgame`, `builder`, `survival`, `narrative`, `mobile-casual` | Assign each after the phase that supplies its modules |
 | 11 | Roadmap | Where do XR, web and consoles land? | Listed as targets or genres, with no phase | Treat as optional packages after Phase 3 |
 | 15 | Roadmap | When do quests, dialogue, workshop and commerce land? | In the [primitive catalogue](../idea/23-primitives.md), with no phase | Assign alongside the kits that first need them |
+| 17 | Roadmap | Should `kit.moba` join the kits? | Proposed in [client and server models](../idea/35-client-server-models.md), with no phase | Add after Phase 3, on the `orders` profile |
 
 ## Project
 
