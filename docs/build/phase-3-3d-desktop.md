@@ -1,6 +1,6 @@
 # Phase 3: 3D desktop
 
-**Proves:** mainstream 3D and client-server. **Depends on:** Phases 0 to 2, [open question](open-questions.md) 9. **Read:** [rendering](../idea/06-rendering.md), [simulation](../idea/08-simulation.md), [online](../idea/09-online.md), [client and server models](../idea/35-client-server-models.md), [next-gen techniques](../idea/17-next-gen-techniques.md).
+**Proves:** mainstream 3D and client-server. **Depends on:** Phases 0 to 2, [open question](open-questions.md) 9. **Read:** [rendering](../idea/06-rendering.md), [simulation](../idea/08-simulation.md), [online](../idea/09-online.md), [client and server models](../idea/35-client-server-models.md), [next-gen techniques](../idea/17-next-gen-techniques.md), [NPCs and AI](../idea/36-npcs-and-ai.md), [mechanics](../idea/37-gameplay-mechanics.md), [physics](../idea/38-physics.md), [tactical shooters](../idea/48-tactical-shooters.md), [rejoin and spectating](../idea/47-layers-rejoin-replay-spectate.md).
 
 ## Build order
 
@@ -21,5 +21,7 @@
 - A dedicated server runs headless with no render, audio or input modules.
 - Headless bots complete a full `kit.fps` match in CI.
 - The server sends a client no state that client cannot perceive, proven by a packet audit that includes sounds and effects.
-- A client reconnects mid-match with correct state.
+- A client reconnects mid-match with correct state, including after a client crash.
+- Same inputs at 30, 144 and 500 fps give identical movement and projectile paths.
+- A delayed spectator relay cannot receive a tick before its configured delay.
 - A modified bot client sending impossible commands gains nothing.

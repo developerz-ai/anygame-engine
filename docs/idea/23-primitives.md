@@ -80,7 +80,7 @@ struct [[ag::component, ag::replicated]] Health {
 | Hosting | Headless runtime, dedicated server, listen server, session lifecycle, graceful drain |
 | Authority | [Authority profiles, per-field visibility](35-client-server-models.md), command validation, movement and hit validation, lag compensation, server fog of war |
 | Replication | Delta compression, relevancy, priority and bandwidth budgets, interest management |
-| Scale | Zones, instancing, phasing, entity hand-off, replication layer, time dilation |
+| Scale | [World copies](47-layers-rejoin-replay-spectate.md), [zones](46-distributed-servers.md), instancing, phasing, entity hand-off, replication layer, time dilation |
 | Reliability | Crash replacement, reconnect, state recovery, tick budget enforcement |
 | Fair play | Replay verification, server detectors, trust scores, cheater-pool matching |
 | Observability | Per-tick metrics, traces, match recording, admin commands |

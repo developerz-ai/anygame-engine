@@ -39,6 +39,7 @@ C++: follow `docs/idea/29-cpp-decisions.md` first (decisions already made), then
 - `docs/idea/33-architecture-map.md` — layers, dependency rules, planned repo layout.
 - `docs/decisions/` — hard-to-reverse choices and rejected options. Read before reopening one.
 - `docs/build/how-we-work.md` — project management. `docs/build/status.yml` is the only progress tracker.
+- `docs/idea/43-best-practices.md` — **start here for any game task**: maps each task and big decision to its doc and primitive.
 - `docs/build/open-questions.md` — unresolved conflicts. Check before relying on a contested point.
 - `.claude/commands/` — `/planx` (plan a build slice), `/feature` (write and ship docs).
 

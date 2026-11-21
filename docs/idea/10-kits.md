@@ -9,7 +9,7 @@ A genre kit is a package that selects modules, sets conventions and ships a play
 | `kit.platformer2d` | fixed | none / rollback | Kinematic controller, tilemaps, input buffering, pixel camera |
 | `kit.topdown2d` | fixed | replication | Tilemaps, 2D lighting, inventory |
 | `kit.fighting` | deterministic | rollback | Frame data and hitbox tools as text and commands, training mode |
-| `kit.fps` | fixed | replication | Lag compensation, weapon framework, bot AI |
+| `kit.fps` | fixed | replication | Lag compensation, weapon framework, bot AI, [tactical preset](48-tactical-shooters.md) |
 | `kit.thirdperson` | fixed | optional | Motion matching, camera rigs, melee combat timeline |
 | `kit.rts` | deterministic | lockstep | Flow fields, fog of war, selection and command UI, replays |
 | `kit.racing` | fixed, sub-stepped | replication | Vehicle physics, track tools, ghosts, rubber-band-free net smoothing |
