@@ -42,6 +42,8 @@ Monolithic engines bake in one answer to four questions, and each answer rules o
 - 🤝 **No regrets:** MIT, no royalties, no lock-in, no forced upgrades, no hidden telemetry. You can always leave with everything.
 - 📱 **Every platform:** Linux, Windows, macOS, Android, iPhone and the browser (WebAssembly + WebGPU) from one project.
 - 🎯 **No more unoptimized or buggy games:** agents bring the dev speed, so the engine focuses on performance and correctness. SOLID at the boundaries, data-oriented in hot paths.
+- ♻️ **Load on demand, cache, unload:** nothing stays in memory unless the player is about to need it.
+- 🏅 **Good games by default:** kits, playbooks and scorecards make the high-quality path the easy one.
 - 🙌 **Help, then get out of the way:** every kit, convention, gate and recommendation is a default your game can override.
 - 🛡️ **Fair play without ring-0:** server authority and server-side detection, no kernel anti-cheat.
 

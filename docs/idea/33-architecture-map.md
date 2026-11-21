@@ -83,4 +83,4 @@ docs/              idea, build, decisions
 | `tests/` | Unit and behaviour tests |
 | `examples/` | A runnable pattern to copy |
 
-Related: [kernel](04-kernel.md), [adapters](05-extending.md#adapters-the-shape-of-every-integration), [stable contracts](22-future-ready.md#the-architecture-stays-the-blocks-grow), [quality bar](32-quality-bar.md). Decisions behind this map: [decision records](../decisions/README.md).
+Related: [kernel](04-kernel.md), [resource lifecycle](34-resource-lifecycle.md), [adapters](05-extending.md#adapters-the-shape-of-every-integration), [stable contracts](22-future-ready.md#the-architecture-stays-the-blocks-grow), [quality bar](32-quality-bar.md). Decisions behind this map: [decision records](../decisions/README.md).

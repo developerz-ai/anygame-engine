@@ -67,6 +67,22 @@ No engine can honestly promise zero bugs. It can make whole classes impossible, 
 
 **Release gate defaults:** bots finish the game, no open blocker, sanitizers clean, soak test passes, saves from previous versions load, and every target meets its budget.
 
+## 🏅 Games built with AnyGame represent us
+
+**A game built with AnyGame should be good by default, because players judge the engine by it.** We earn that by making the good path the easy one, never by controlling anyone's game.
+
+| Lever | How |
+|---|---|
+| Good starting point | Every kit starts inside budget, with tests, bots and a clean release gate |
+| Playbooks raise the floor | Agents inherit genre know-how, feel checklists and known traps |
+| Quality is visible | `ag scorecard` rates performance, stability, loading, size, accessibility and polish |
+| Warnings arrive early | A regression is reported on the change that caused it |
+| Polish is a checklist | Input latency, menus, settings, remapping, subtitles, saves, pause, error states |
+| Reference games set the bar | Each kit's sample game must be something we are proud to show |
+| Agents push back honestly | An agent reports a weak result, instead of calling it finished |
+
+**Optional "Verified on AnyGame" badge:** a game may earn it by publishing a passing scorecard from a reproducible build. It is never required, and there is no fee. Games without it are just as welcome, and no game must display our name ([no regrets](31-no-regrets.md)).
+
 ## Definition of done for an agent
 
 A feature is done when:

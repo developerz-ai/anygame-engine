@@ -55,7 +55,7 @@ struct [[ag::component, ag::replicated]] Health {
 | AI | FSM, behaviour trees, utility, planners, perception, director |
 | World | Coordinates, partitioning, data layers, streaming queries, PCG |
 | Scripting | Sandboxed VM, quotas, generated bindings |
-| Content | Packages, asset loading, mods, hot reload |
+| Content | Packages, [on-demand loading, caching and unloading](34-resource-lifecycle.md), mods, hot reload |
 | Netcode | Transport, rollback, lockstep, replication, prediction, MMO |
 
 ## Client: the game

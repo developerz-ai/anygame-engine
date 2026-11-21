@@ -66,6 +66,8 @@ Full text: `docs/idea/01-thesis.md`.
 - Huge catalogue, tiny build. Give agents many ready blocks, and ship only what a game loads: `docs/idea/23-primitives.md`.
 - Do not reinvent the wheel. Find, use, configure, compose, wrap, replace, then improve with evidence: `docs/idea/18-agent-dev-cycle.md`.
 - SOLID/SRP at boundaries, performance first in hot paths. Abstract per batch, never per entity. Done means tested, in budget, sanitizer-clean: `docs/idea/32-quality-bar.md`.
+- Load on demand, cache, unload: one lifecycle, handles only, never block a frame: `docs/idea/34-resource-lifecycle.md`.
+- Games built with AnyGame represent us. Make the good path the default, never control a game.
 - No regrets. No fees, lock-in, forced upgrades, hidden telemetry or overclaiming: `docs/idea/31-no-regrets.md`.
 - Platforms: Linux, Windows, macOS, Android, iPhone and browser (WASM + WebGPU). The kernel must compile to `wasm32`. OS differences stay behind ports: `docs/idea/30-platforms.md`.
 - Future-ready. No hard-coded ceilings, version everything that persists, every dependency has an exit: `docs/idea/22-future-ready.md`.
