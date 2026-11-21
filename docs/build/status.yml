@@ -1,0 +1,55 @@
+# The only progress tracker. Rules: docs/build/how-we-work.md
+# status: not_started | in_progress | blocked | complete
+project: anygame-engine
+stage: design
+last_updated: 2026-11-21
+current_focus: settle Phase 0 open questions
+phases:
+  - id: 0
+    name: Kernel
+    doc: phase-0-kernel.md
+    status: not_started
+    blocked_by_open_questions: [1, 2, 3, 4, 16]
+    evidence: []
+  - id: 1
+    name: 2D stack
+    doc: phase-1-2d.md
+    status: not_started
+    blocked_by_open_questions: [5, 6, 7, 8]
+    evidence: []
+  - id: 2
+    name: Determinism
+    doc: phase-2-determinism.md
+    status: not_started
+    blocked_by_open_questions: [4]
+    evidence: []
+  - id: 3
+    name: 3D desktop
+    doc: phase-3-3d-desktop.md
+    status: not_started
+    blocked_by_open_questions: [9]
+    evidence: []
+  - id: 4
+    name: Backend
+    doc: phase-4-backend.md
+    status: not_started
+    blocked_by_open_questions: []
+    evidence: []
+  - id: 5
+    name: World
+    doc: phase-5-world.md
+    status: not_started
+    blocked_by_open_questions: []
+    evidence: []
+  - id: 6
+    name: High-end
+    doc: phase-6-high-end.md
+    status: not_started
+    blocked_by_open_questions: []
+    evidence: []
+  - id: 7
+    name: MMO
+    doc: phase-7-mmo.md
+    status: not_started
+    blocked_by_open_questions: []
+    evidence: []

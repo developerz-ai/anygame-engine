@@ -36,6 +36,9 @@ C++: follow `docs/idea/29-cpp-decisions.md` first (decisions already made), then
 - `docs/idea/25-idea-to-distribution.md` — full game lifecycle: project management, release, stores, live ops.
 - `docs/idea/26-one-prompt-to-game.md` — the target experience: a human says "build a game like X", the agent has the know-how. "Like X" means genre and mechanics, always an original game.
 - `docs/idea/27-flywheel.md` — each game built improves the engine for the next. Opt-in only, nothing leaves a project without approval.
+- `docs/idea/33-architecture-map.md` — layers, dependency rules, planned repo layout.
+- `docs/decisions/` — hard-to-reverse choices and rejected options. Read before reopening one.
+- `docs/build/how-we-work.md` — project management. `docs/build/status.yml` is the only progress tracker.
 - `docs/build/open-questions.md` — unresolved conflicts. Check before relying on a contested point.
 - `.claude/commands/` — `/planx` (plan a build slice), `/feature` (write and ship docs).
 

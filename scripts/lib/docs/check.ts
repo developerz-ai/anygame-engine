@@ -5,7 +5,7 @@ import type { Finding } from '../report';
 import { readUtf8 } from '../text';
 import { checkIndexes, checkLinks, checkSecrets, checkTables } from './rules';
 
-const INDEXED_FOLDERS = ['docs/idea', 'docs/build'];
+const INDEXED_FOLDERS = ['docs/idea', 'docs/build', 'docs/decisions'];
 
 /** Runs every docs rule over the project and returns all findings. */
 export function checkDocs(rootPath: string): Finding[] {

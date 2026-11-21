@@ -66,6 +66,8 @@ $ ag query "Player.Transform, Player.Velocity" --at tick=120
 
 - 💡 **[Idea](docs/idea/README.md):** the full architecture blueprint.
 - 🏗️ **[Build](docs/build/README.md):** the phased roadmap, with exit checks.
+- 🗺️ **[Architecture map](docs/idea/33-architecture-map.md):** layers and dependency rules on one page.
+- 🧭 **[Decisions](docs/decisions/README.md)** and **[how we work](docs/build/how-we-work.md):** why things are this way, and how work moves.
 - ❓ **[Open questions](docs/build/open-questions.md):** what still needs deciding.
 - 🧱 **[Primitives](docs/idea/23-primitives.md):** everything planned for the game client, game server and backend.
 - 🗂️ **[Project organisation](docs/idea/24-project-organization.md):** how agents structure a game, from jam to live service.
