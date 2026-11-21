@@ -34,6 +34,7 @@ Monolithic engines bake in one answer to four questions, and each answer rules o
 - 🔭 **Ready for the future:** new blocks, hardware, APIs and models arrive as modules and adapters, without changing the architecture, and old games and saves keep working.
 - 📦 **Huge catalogue, tiny build:** a lot of ready-made blocks to work with, and your game ships only what it loads.
 - ♻️ **No reinventing the wheel:** agents start from proven blocks, spend their effort on the game, and improve a block when they can prove it.
+- 🔁 **Every game makes it better:** real problems become better blocks, errors and playbooks for the next game. Sharing is always opt-in.
 - 🙌 **Help, then get out of the way:** every kit, convention, gate and recommendation is a default your game can override.
 - 🛡️ **Fair play without ring-0:** server authority and server-side detection, no kernel anti-cheat.
 

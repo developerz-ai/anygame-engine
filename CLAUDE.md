@@ -22,6 +22,7 @@ C++ rules: `docs/idea/16-cpp23-craft.md`. Optional companion tools are recommend
 - `docs/idea/24-project-organization.md` — default layout for game projects and where each thing goes.
 - `docs/idea/25-idea-to-distribution.md` — full game lifecycle: project management, release, stores, live ops.
 - `docs/idea/26-one-prompt-to-game.md` — the target experience: a human says "build a game like X", the agent has the know-how. "Like X" means genre and mechanics, always an original game.
+- `docs/idea/27-flywheel.md` — each game built improves the engine for the next. Opt-in only, nothing leaves a project without approval.
 - `docs/build/open-questions.md` — unresolved conflicts. Check before relying on a contested point.
 - `.claude/commands/` — `/planx` (plan a build slice), `/feature` (write and ship docs).
 

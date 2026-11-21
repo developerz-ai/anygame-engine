@@ -10,6 +10,7 @@
 | Modding and workshop | Mods use the same package mechanism as game content, with fewer permissions |
 | Lifecycle | Each phase adds its part of [idea to distribution](../idea/25-idea-to-distribution.md): planning primitives from Phase 0, `distribute` adapters from Phase 1 |
 | One-prompt eval | Each kit adds a genre playbook and a [one-prompt](../idea/26-one-prompt-to-game.md) eval scored by a bot |
+| Flywheel | Every game's friction can become a block, fix or playbook update through the opt-in [flywheel](../idea/27-flywheel.md) |
 | Docs | Markdown with runnable examples that CI executes |
 | Conformance | Every interface ships a suite any replacement must pass |
 | Budgets | Each module declares CPU, GPU and memory budgets. CI fails on regression |

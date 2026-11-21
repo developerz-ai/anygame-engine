@@ -30,4 +30,5 @@ The AnyGame architecture blueprint, one section per file. Blueprint date: 2026-1
 | 24 | [Project organisation](24-project-organization.md) | Starting or structuring a game: layout and where things go |
 | 25 | [Idea to distribution](25-idea-to-distribution.md) | Planning, managing, releasing or operating a game |
 | 26 | [One prompt to a game](26-one-prompt-to-game.md) | The target experience: "build a game like X" |
+| 27 | [The flywheel](27-flywheel.md) | How each game built makes the engine better for the next |
 | | [Sources](sources.md) | Checking a claim |
