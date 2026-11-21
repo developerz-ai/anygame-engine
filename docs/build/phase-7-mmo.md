@@ -1,6 +1,6 @@
 # Phase 7: MMO
 
-**Proves:** persistent scale. **Depends on:** Phases 3 to 5. **Read:** [online](../idea/09-online.md), [kits](../idea/10-kits.md).
+**Proves:** persistent scale. **Depends on:** Phases 3 to 5. **Read:** [online](../idea/09-online.md), [kits](../idea/10-kits.md), [client and server models](../idea/35-client-server-models.md).
 
 ## Build order
 

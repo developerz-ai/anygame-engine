@@ -17,7 +17,7 @@ Bindings for all tiers are generated from the reflection schema, so a new C++ co
 
 Warcraft III shipped its own World Editor: terrain, unit data editor, a trigger system (event, condition, action) that compiled to script, and maps as single shareable files that downloaded automatically when joining a lobby. Tower defence and the MOBA genre came out of it. AnyGame copies the whole recipe:
 
-- **The shipped game can include the editor tooling:** the same CLI and text formats its developers use. A game may also ship its own in-game map tool as a package.
+- **A game can offer its tooling as a separate optional download:** the same CLI and text formats its developers use, never inside the game binary ([decision 013](../decisions/013-tooling-ships-separately.md)). A game may also ship its own in-game map tool as a package.
 - **Triggers.** Event-condition-action authoring that compiles to Lua; advanced modders drop into Lua directly.
 - **Data overrides.** Every unit, item and ability is a data asset; a mod layers changes on top without replacing files, so two mods touching different fields do not conflict.
 - **Maps and modes as packages** that sync automatically in multiplayer, with content hashes so all peers run identical logic (required for lockstep).

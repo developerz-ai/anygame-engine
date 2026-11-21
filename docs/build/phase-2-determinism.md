@@ -1,6 +1,6 @@
 # Phase 2: Determinism
 
-**Proves:** the snapshot and determinism design. **Depends on:** Phases 0 and 1, [open question](open-questions.md) 4. **Read:** [kernel](../idea/04-kernel.md), [online](../idea/09-online.md), [kits](../idea/10-kits.md).
+**Proves:** the snapshot and determinism design. **Depends on:** Phases 0 and 1, [decision 012](../decisions/012-determinism-guarantee-tiers.md). **Read:** [kernel](../idea/04-kernel.md), [online](../idea/09-online.md), [kits](../idea/10-kits.md).
 
 ## Build order
 

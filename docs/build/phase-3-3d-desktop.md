@@ -1,6 +1,6 @@
 # Phase 3: 3D desktop
 
-**Proves:** mainstream 3D and client-server. **Depends on:** Phases 0 to 2, [open question](open-questions.md) 9. **Read:** [rendering](../idea/06-rendering.md), [simulation](../idea/08-simulation.md), [online](../idea/09-online.md).
+**Proves:** mainstream 3D and client-server. **Depends on:** Phases 0 to 2, [open question](open-questions.md) 9. **Read:** [rendering](../idea/06-rendering.md), [simulation](../idea/08-simulation.md), [online](../idea/09-online.md), [client and server models](../idea/35-client-server-models.md), [next-gen techniques](../idea/17-next-gen-techniques.md).
 
 ## Build order
 

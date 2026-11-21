@@ -19,6 +19,16 @@ When each [primitive](../idea/23-primitives.md) first becomes usable. Every phas
 - A manifest without the phase's modules builds with none of their code.
 - Each new port has a conformance suite and a null or simple adapter.
 
-## Not yet scheduled
+## Kit and platform schedule
 
-Tracked in [open questions](open-questions.md): quests and dialogue depth, workshop, commerce, and several kits.
+Each lands in the first phase that supplies all its modules ([decision 015](../decisions/015-kit-and-platform-schedule.md)), with a complete original sample game.
+
+| Phase | Kits | Platforms and primitives |
+|---|---|---|
+| 1 | `platformer2d`, `narrative` | Android, iOS, 2D browser build |
+| 2 | `fighting`, `rts`, `builder` | Replay viewer |
+| 3 | `fps`, `thirdperson`, `topdown2d` | Web 3D light tier, console packages may start privately |
+| 4 | `rpg`, `cardgame`, `mobile-casual`, `moba` | Quests, dialogue, commerce, entitlements, workshop service |
+| 5 | `openworld`, `racing`, `survival` | Weather, day/night, destruction |
+| 6 | None new | XR package, high-end tiers for existing kits |
+| 7 | `mmo` | Guild, economy and zone blocks |

@@ -130,7 +130,7 @@ Following custom-game ecosystems:
 - Clients download content by hash, so everybody runs identical rules.
 - UI scripts can display values, but can trigger gameplay only through player-initiated input.
 
-## Proposed `kit.moba`
+## `kit.moba`
 
 `orders` profile, deterministic-capable server, fog of war, data-driven abilities, lane and wave AI, items, replays, spectator relay, custom modes. Original heroes and world.
 

@@ -20,7 +20,18 @@ The order of work. The order is chosen so there is a shippable, useful engine at
 
 Client and server primitives per phase: [primitives by phase](primitives-by-phase.md).
 
-Before Phase 0 code starts, settle [open questions](open-questions.md).
+**Next:** [Phase 0 slice 1](phase-0-01-build-ci-platform.md). Later phases get slices when the phase before them proves its bet. Remaining [open questions](open-questions.md) are tied to the slice or phase they block.
+
+### Phase 0 slices
+
+1. [Phase 0.01: Build, CI and platform layer](phase-0-01-build-ci-platform.md)
+2. [Phase 0.02: Memory](phase-0-02-memory.md)
+3. [Phase 0.03: Registry and ports](phase-0-03-registry-ports.md)
+4. [Phase 0.04: Reflection and schema](phase-0-04-reflection-schema.md)
+5. [Phase 0.05: ECS and Worlds](phase-0-05-ecs.md)
+6. [Phase 0.06: Jobs and system scheduling](phase-0-06-jobs.md)
+7. [Phase 0.07: Clocks, snapshots and hot reload](phase-0-07-clocks-snapshots.md)
+8. [Phase 0.08: `ag` CLI](phase-0-08-ag-cli.md)
 
 ## Rules for every phase
 

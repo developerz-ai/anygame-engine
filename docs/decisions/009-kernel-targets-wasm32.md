@@ -1,6 +1,6 @@
 # 009 — The kernel compiles to wasm32 from Phase 0
 
-Status: proposed
+Status: accepted
 Date: 2026-11-21
 
 ## Context

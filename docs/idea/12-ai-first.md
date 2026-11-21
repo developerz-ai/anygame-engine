@@ -2,7 +2,7 @@
 
 An AI agent should be able to build, run, observe, test and fix a game with no GUI and no human relaying error messages; every design choice above was picked partly because it makes that true.
 
-The incumbents are retrofitting this. Unity now ships an official MCP server that exposes scene hierarchy, code and editor state to agents; Unreal 5.8 added an open-standard plugin for LLM tooling, and Epic says UE6 will be built on an open MCP foundation. AnyGame can design for it from the first commit instead.
+The incumbents are retrofitting this. Unity shipped an official MCP server exposing scene hierarchy, code and editor state to agents, and as of 2026-11 its package docs deprecate that server in favour of the Unity CLI ([sources](sources.md)); Unreal 5.8 added an open-standard plugin for LLM tooling, and Epic says UE6 will be built on an open MCP foundation. AnyGame can design for it from the first commit instead.
 
 ## What makes an engine agent-friendly
 
