@@ -1,6 +1,6 @@
 # Phase 1: 2D stack
 
-**Proves:** pay for what you use, mobile, first real games. **Depends on:** Phase 0, decisions [013](../decisions/013-tooling-ships-separately.md) and [014](../decisions/014-wrap-solvers-and-languages.md). **Read:** [rendering](../idea/06-rendering.md), [simulation](../idea/08-simulation.md), [scripting and tools](../idea/11-scripting-modding-tools.md), [physics](../idea/38-physics.md), [animation and feel](../idea/39-animation-camera-feel.md), [audio](../idea/40-audio.md), [UX](../idea/42-ux-accessibility-localization.md), [visual modes](../idea/44-visual-modes.md).
+**Proves:** pay for what you use, mobile, first real games. **Depends on:** Phase 0, decisions [013](../decisions/013-tooling-ships-separately.md) and [014](../decisions/014-wrap-solvers-and-languages.md). **Read:** [rendering](../idea/06-rendering.md), [simulation](../idea/08-simulation.md), [scripting and tools](../idea/11-scripting-modding-tools.md), [physics](../idea/38-physics.md), [animation and feel](../idea/39-animation-camera-feel.md), [audio](../idea/40-audio.md), [UX](../idea/42-ux-accessibility-localization.md), [visual modes](../idea/44-visual-modes.md), [single-player and offline](../idea/49-single-player-offline.md).
 
 ## Build order
 
@@ -19,6 +19,8 @@
 - Empty 2D shipped binary is under 5 MB and contains no 3D, navmesh or netcode symbols.
 - Idle memory for an empty project is under 30 MB.
 - 100,000 simple moving sprites hold 60 fps on a mid-range phone.
+- The sample game boots and finishes with networking disabled, and an audit sees no connection.
+- Killing the process during every save phase never loses the last good save.
 - Eviction chaos mode runs the sample game with no crash or stale handle.
 - Memory returns to baseline after repeated level changes.
 - Script reload takes under 1 s and C++ module reload under 5 s.

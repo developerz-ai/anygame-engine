@@ -69,6 +69,7 @@ Full text: `docs/idea/01-thesis.md`.
 - SOLID/SRP at boundaries, performance first in hot paths. Abstract per batch, never per entity. Done means tested, in budget, sanitizer-clean: `docs/idea/32-quality-bar.md`.
 - Load on demand, cache, unload: one lifecycle, handles only, never block a frame: `docs/idea/34-resource-lifecycle.md`.
 - Games built with AnyGame represent us. Make the good path the default, never control a game.
+- Offline is first-class. No game needs internet, an account or a server unless it opts in: `docs/idea/49-single-player-offline.md`.
 - Online: the client sends intent, the server decides, and each field has a visibility class: `docs/idea/35-client-server-models.md`.
 - No regrets. No fees, lock-in, forced upgrades, hidden telemetry or overclaiming: `docs/idea/31-no-regrets.md`.
 - Platforms: Linux, Windows, macOS, Android, iPhone and browser (WASM + WebGPU). The kernel must compile to `wasm32`. OS differences stay behind ports: `docs/idea/30-platforms.md`.
