@@ -10,9 +10,12 @@ Open-source, AI-first game engine: small C++23 kernel + replaceable modules. A g
 
 ## Commands
 ```bash
-bin/check          # the gate CI runs: tests the checker, then checks links, anchors, indexes, tables, fences, secrets
-bin/check --json   # same, as structured errors
+bin/setup          # install tools, run the gate
+bin/check          # the gate CI runs: lint, types, tests, then links, anchors, indexes, tables, fences, secrets
+bin/check --json   # same, with docs errors as JSON on stdout
+bun run fmt        # format and fix scripts
 ```
+Repo tooling is Bun + TypeScript in `scripts/`. No Python. The engine itself is C++23.
 CI: `.github/workflows/ci.yml`, job `verify`. Review config: `.coderabbit.yml`.
 
 C++: follow `docs/idea/29-cpp-decisions.md` first (decisions already made), then `docs/idea/16-cpp23-craft.md`. Allocators, libraries, profilers: `docs/idea/28-libraries-and-profilers.md`. Optional companion tools are recommended, never required: `docs/idea/19-companion-tools.md`.

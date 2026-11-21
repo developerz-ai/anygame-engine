@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
-# The gate. CI runs exactly this command.
+# The gate. CI runs exactly this command. Flags such as --json go to the docs check.
 set -euo pipefail
 cd "$(dirname "${BASH_SOURCE[0]}")/.."
 
-python3 -B -m unittest discover -s tools -p 'test_*.py' -q
-python3 -B tools/check_docs.py "$@"
+bunx biome check scripts >&2
+bunx tsc --noEmit >&2
+bun test scripts >&2
+bun scripts/check-docs.ts "$@"

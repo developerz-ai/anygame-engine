@@ -28,9 +28,9 @@ reviews:
     - path: 'docs/idea/19-companion-tools.md'
       instructions: >-
         Every tool stays optional, partnerships stay disclosed, and private projects are not named.
-    - path: 'tools/**'
+    - path: 'scripts/**'
       instructions: >-
-        Standard library only. Failures must be reported, never swallowed. Never print a secret value.
+        Bun and TypeScript. No runtime dependencies. Failures must be reported, never swallowed. Never print a secret value.
     - path: '.github/workflows/**'
       instructions: >-
         Actions pinned to a full SHA, least-privilege permissions, and CI runs bin/check unchanged.
