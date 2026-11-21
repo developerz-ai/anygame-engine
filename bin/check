@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# The gate. CI runs exactly this command.
+set -euo pipefail
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
+
+python3 -B -m unittest discover -s tools -p 'test_*.py' -q
+python3 -B tools/check_docs.py "$@"

@@ -6,7 +6,14 @@ Open-source, AI-first game engine: small C++23 kernel + replaceable modules. A g
 
 **Humans bring ideas. Coding agents use the kernel and modules to build any 2D or 3D game.** Everything is pluggable, extendable and replaceable. Agents are the primary user of every API, error and command: `docs/idea/18-agent-dev-cycle.md`. Think `developerz-ai/ultimate` for games: same agent experience, but every part replaceable. AnyGame is a toolbox: the developer's agent picks what the game needs.
 
-**Current stage: docs only.** No engine code, build, or tests exist. Do not scaffold code until asked.
+**Current stage: docs only.** No engine code exists. Do not scaffold code until asked.
+
+## Commands
+```bash
+bin/check          # the gate CI runs: tests the checker, then checks links, anchors, indexes, tables, fences, secrets
+bin/check --json   # same, as structured errors
+```
+CI: `.github/workflows/ci.yml`, job `verify`. Review config: `.coderabbit.yml`.
 
 C++: follow `docs/idea/29-cpp-decisions.md` first (decisions already made), then `docs/idea/16-cpp23-craft.md`. Allocators, libraries, profilers: `docs/idea/28-libraries-and-profilers.md`. Optional companion tools are recommended, never required: `docs/idea/19-companion-tools.md`.
 

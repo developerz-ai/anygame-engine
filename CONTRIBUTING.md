@@ -15,6 +15,7 @@ This applies to every contributor, human or AI.
 
 - Branch from `main`, with one concern per pull request.
 - Use conventional commits, such as `docs(build): add phase 0 exit check`.
+- Run `bin/check` before opening a pull request. CI runs the same command.
 - Follow the doc rules in [CLAUDE.md](CLAUDE.md).
 - Date load-bearing claims, and link a source for claims about other engines.
 - AI-assisted contributions are welcome. You are responsible for checking them.
