@@ -8,7 +8,7 @@ Open-source, AI-first game engine: small C++23 kernel + replaceable modules. A g
 
 **Current stage: docs only.** No engine code, build, or tests exist. Do not scaffold code until asked.
 
-C++ rules: `docs/idea/16-cpp23-craft.md`. Optional companion tools are recommended, never required: `docs/idea/19-companion-tools.md`.
+C++: follow `docs/idea/29-cpp-decisions.md` first (decisions already made), then `docs/idea/16-cpp23-craft.md`. Allocators, libraries, profilers: `docs/idea/28-libraries-and-profilers.md`. Optional companion tools are recommended, never required: `docs/idea/19-companion-tools.md`.
 
 ## Response rules
 - Lead with the answer or action. Terse. Paths and commands stay exact.
@@ -49,6 +49,8 @@ Full text: `docs/idea/01-thesis.md`.
 - Small and fast by default. Every byte and millisecond must reach the player. Show the cost of each change: `docs/idea/21-small-and-fast.md`.
 - Huge catalogue, tiny build. Give agents many ready blocks, and ship only what a game loads: `docs/idea/23-primitives.md`.
 - Do not reinvent the wheel. Find, use, configure, compose, wrap, replace, then improve with evidence: `docs/idea/18-agent-dev-cycle.md`.
+- No regrets. No fees, lock-in, forced upgrades, hidden telemetry or overclaiming: `docs/idea/31-no-regrets.md`.
+- Platforms: Linux, Windows, macOS, Android, iPhone are first-class. OS differences stay behind ports: `docs/idea/30-platforms.md`.
 - Future-ready. No hard-coded ceilings, version everything that persists, every dependency has an exit: `docs/idea/22-future-ready.md`.
 
 ## Hard boundaries

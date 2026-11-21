@@ -35,6 +35,8 @@ Monolithic engines bake in one answer to four questions, and each answer rules o
 - 📦 **Huge catalogue, tiny build:** a lot of ready-made blocks to work with, and your game ships only what it loads.
 - ♻️ **No reinventing the wheel:** agents start from proven blocks, spend their effort on the game, and improve a block when they can prove it.
 - 🔁 **Every game makes it better:** real problems become better blocks, errors and playbooks for the next game. Sharing is always opt-in.
+- 🤝 **No regrets:** MIT, no royalties, no lock-in, no forced upgrades, no hidden telemetry. You can always leave with everything.
+- 📱 **Five first-class platforms:** Linux, Windows, macOS, Android and iPhone from one project.
 - 🙌 **Help, then get out of the way:** every kit, convention, gate and recommendation is a default your game can override.
 - 🛡️ **Fair play without ring-0:** server authority and server-side detection, no kernel anti-cheat.
 
@@ -64,6 +66,8 @@ $ ag query "Player.Transform, Player.Velocity" --at tick=120
 - 🗂️ **[Project organisation](docs/idea/24-project-organization.md):** how agents structure a game, from jam to live service.
 - 🚢 **[Idea to distribution](docs/idea/25-idea-to-distribution.md):** the full cycle, from pitch and project management to stores and live ops.
 - 🧠 **[C++23 craft](docs/idea/16-cpp23-craft.md):** memory, RAII, sanitizers, testing.
+- 🧭 **[C++ decisions](docs/idea/29-cpp-decisions.md):** lookup tables, so any model makes the high-return choice.
+- 🧰 **[Libraries and profilers](docs/idea/28-libraries-and-profilers.md):** the best allocators, libraries and profilers, one default per need.
 - ⚡ **[Agent dev cycle](docs/idea/18-agent-dev-cycle.md):** from a human idea to a verified build.
 - 🤝 **[Companion tools](docs/idea/19-companion-tools.md):** optional recommendations for web, 3D assets and media.
 

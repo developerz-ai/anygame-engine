@@ -4,7 +4,7 @@ The AnyGame architecture blueprint, one section per file. Blueprint date: 2026-1
 
 | # | Doc | Read before |
 |---|---|---|
-| 1 | [Thesis](01-thesis.md) | Anything. Holds the objective and ten design rules |
+| 1 | [Thesis](01-thesis.md) | Anything. Holds the objective and eleven design rules |
 | 2 | [Prior art](02-prior-art.md) | Designing a module: what each genre and engine solved |
 | 3 | [Architecture](03-architecture.md) | Project layout, generators, platforms |
 | 4 | [Kernel](04-kernel.md) | Memory, jobs, ECS, reflection, clocks |
@@ -31,4 +31,8 @@ The AnyGame architecture blueprint, one section per file. Blueprint date: 2026-1
 | 25 | [Idea to distribution](25-idea-to-distribution.md) | Planning, managing, releasing or operating a game |
 | 26 | [One prompt to a game](26-one-prompt-to-game.md) | The target experience: "build a game like X" |
 | 27 | [The flywheel](27-flywheel.md) | How each game built makes the engine better for the next |
+| 28 | [Libraries and profilers](28-libraries-and-profilers.md) | Picking an allocator, library or profiler |
+| 29 | [C++ decisions](29-cpp-decisions.md) | Writing any C++: the answers are already chosen |
+| 30 | [Platforms](30-platforms.md) | Anything OS-specific: Linux, Windows, macOS, Android, iPhone |
+| 31 | [No regrets](31-no-regrets.md) | Any choice affecting licensing, lock-in, upgrades or trust |
 | | [Sources](sources.md) | Checking a claim |

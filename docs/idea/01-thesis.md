@@ -27,6 +27,7 @@ AnyGame bakes in none of them. The kernel knows about memory, jobs, data, reflec
 8. **Help, then get out of the way.** The engine serves the developer and their game, and never stands in front of them. Kits, conventions, gates, budgets and recommendations are defaults a game can override, replace or ignore. Strict rules bind the engine's own code and the safety of its contracts, not a game's design, stack or content choices.
 9. **Small and fast by default.** Faster hardware should buy a better game, not a heavier one. Every byte and millisecond must reach the player, and the engine makes each one's price visible ([small and fast](21-small-and-fast.md)).
 10. **Ready for the future.** Bet on nothing permanently. New hardware, APIs and models arrive as adapters, and old games and saves keep working ([future-ready](22-future-ready.md)).
+11. **No regrets.** No fees, lock-in, forced upgrades, hidden telemetry or overclaiming. A developer can always leave with everything ([no regrets](31-no-regrets.md)).
 
 ## What "any game" honestly means
 
