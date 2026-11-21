@@ -45,6 +45,7 @@ Monolithic engines bake in one answer to four questions, and each answer rules o
 - ♻️ **Load on demand, cache, unload:** nothing stays in memory unless the player is about to need it.
 - 🏅 **Good games by default:** kits, playbooks and scorecards make the high-quality path the easy one.
 - ⚔️ **Serious online by design:** server authority, per-field fog of war, reconnects, replays and spectators, from small matches to persistent worlds.
+- 👾 **Any look:** pixel art, retro 3D, toon or next-gen, even several switchable looks over one game.
 - 🙌 **Help, then get out of the way:** every kit, convention, gate and recommendation is a default your game can override.
 - 🛡️ **Fair play without ring-0:** server authority and server-side detection, no kernel anti-cheat.
 
@@ -67,6 +68,7 @@ $ ag query "Player.Transform, Player.Velocity" --at tick=120
 
 ## 📚 Docs
 
+- 🏆 **[Best practices](docs/idea/43-best-practices.md):** start here. Every game dev task mapped to its guide and primitive.
 - 💡 **[Idea](docs/idea/README.md):** the full architecture blueprint.
 - 🏗️ **[Build](docs/build/README.md):** the phased roadmap, with exit checks.
 - 🗺️ **[Architecture map](docs/idea/33-architecture-map.md):** layers and dependency rules on one page.

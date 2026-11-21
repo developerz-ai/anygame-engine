@@ -1,6 +1,6 @@
 # 💡 Idea
 
-The AnyGame architecture blueprint, one section per file. Blueprint date: 2026-11-21. This is the **why and what**. The order of work is in [../build/](../build/README.md).
+The AnyGame architecture blueprint, one section per file. Blueprint date: 2026-11-21. This is the **why and what**. **For any game task, start at [best practices](43-best-practices.md).** The order of work is in [../build/](../build/README.md).
 
 | # | Doc | Read before |
 |---|---|---|
@@ -39,4 +39,17 @@ The AnyGame architecture blueprint, one section per file. Blueprint date: 2026-1
 | 33 | [Architecture map](33-architecture-map.md) | Deciding where code goes and what may depend on what |
 | 34 | [Load, cache, unload](34-resource-lifecycle.md) | Anything that loads: lazy loading, streaming, caching, eviction |
 | 35 | [Client and server models](35-client-server-models.md) | Any online feature: authority, visibility, reconnects, spectators |
+| 36 | [NPCs and AI](36-npcs-and-ai.md) | Enemies, companions, crowds, directors, LLM NPCs |
+| 37 | [Gameplay mechanics](37-gameplay-mechanics.md) | Abilities, damage, items, loot, progression, quests |
+| 38 | [Physics](38-physics.md) | Collision, controllers, vehicles, ragdolls, destruction |
+| 39 | [Animation, camera and feel](39-animation-camera-feel.md) | Motion, cameras, input latency, juice |
+| 40 | [Audio](40-audio.md) | Mixing, spatial sound, music, loudness |
+| 41 | [Game and level design](41-game-and-level-design.md) | Core loops, balance, pacing, levels, playtesting |
+| 42 | [UX, accessibility, localisation](42-ux-accessibility-localization.md) | Menus, HUD, settings, inclusive design, translation |
+| 43 | [Best practices](43-best-practices.md) | **Start here for any game task** |
+| 44 | [Visual modes](44-visual-modes.md) | Pixel art, retro, remasters, switchable looks |
+| 45 | [Concurrency](45-concurrency.md) | Threads, jobs, atomics, async I/O |
+| 46 | [Distributed servers](46-distributed-servers.md) | Server scaling, MMO zones, hand-off, persistence |
+| 47 | [Layers, rejoin, replay, spectate](47-layers-rejoin-replay-spectate.md) | World copies, reconnects, replays, live viewing |
+| 48 | [Tactical shooters](48-tactical-shooters.md) | Hit registration, fair shots, round-based play |
 | | [Sources](sources.md) | Checking a claim |

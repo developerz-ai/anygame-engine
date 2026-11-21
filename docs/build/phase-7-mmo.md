@@ -1,6 +1,6 @@
 # Phase 7: MMO
 
-**Proves:** persistent scale. **Depends on:** Phases 3 to 5. **Read:** [online](../idea/09-online.md), [kits](../idea/10-kits.md), [client and server models](../idea/35-client-server-models.md).
+**Proves:** persistent scale. **Depends on:** Phases 3 to 5. **Read:** [online](../idea/09-online.md), [kits](../idea/10-kits.md), [client and server models](../idea/35-client-server-models.md), [distributed servers](../idea/46-distributed-servers.md), [layers and world copies](../idea/47-layers-rejoin-replay-spectate.md).
 
 ## Build order
 
@@ -17,5 +17,6 @@
 
 - Killing a simulation server mid-session disconnects no player, and a replacement takes over.
 - An entity crossing a server boundary is neither lost nor duplicated.
+- Merging two world copies and thousands of layer hops lose and duplicate nothing.
 - A soak test of bot clients finds no item duplication in the economy audit.
 - Restarting the whole stack restores persisted world state.

@@ -1,6 +1,6 @@
 # Phase 5: World
 
-**Proves:** large worlds. **Depends on:** Phases 3 and 4. **Read:** [world](../idea/07-world.md), [kits](../idea/10-kits.md), [resource lifecycle](../idea/34-resource-lifecycle.md), [large-scale combat](../idea/15-large-scale-combat.md).
+**Proves:** large worlds. **Depends on:** Phases 3 and 4. **Read:** [world](../idea/07-world.md), [kits](../idea/10-kits.md), [resource lifecycle](../idea/34-resource-lifecycle.md), [large-scale combat](../idea/15-large-scale-combat.md), [NPCs and AI](../idea/36-npcs-and-ai.md), [distributed servers](../idea/46-distributed-servers.md).
 
 ## Build order
 
