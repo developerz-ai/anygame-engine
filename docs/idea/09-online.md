@@ -15,6 +15,8 @@ A component field is annotated once (`replicated`, `predicted`, `owner-only`, `q
 
 Rollback's cost is why it stays in small games: full state must be saved and several frames re-simulated inside one frame. Because world snapshots are a kernel feature ([section 4](04-kernel.md)), AnyGame games get the hard part without the multi-year retrofit that shipped fighting games have paid.
 
+Authority profiles, per-field visibility and the session lifecycle: [client and server models](35-client-server-models.md).
+
 ## Server architecture for persistent worlds
 
 The key idea comes from Star Citizen's published design: separate simulation from replication and state. A replication layer holds every entity's state in memory and streams it both to clients and to simulation servers; a simulation server is then just another subscriber that happens to have authority over some entities.

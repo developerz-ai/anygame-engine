@@ -55,7 +55,7 @@ struct [[ag::component, ag::replicated]] Health {
 | AI | FSM, behaviour trees, utility, planners, perception, director |
 | World | Coordinates, partitioning, data layers, streaming queries, PCG |
 | Scripting | Sandboxed VM, quotas, generated bindings |
-| Content | Packages, asset loading, mods, hot reload |
+| Content | Packages, [on-demand loading, caching and unloading](34-resource-lifecycle.md), mods, hot reload |
 | Netcode | Transport, rollback, lockstep, replication, prediction, MMO |
 
 ## Client: the game
@@ -78,7 +78,7 @@ struct [[ag::component, ag::replicated]] Health {
 | Area | Primitives |
 |---|---|
 | Hosting | Headless runtime, dedicated server, listen server, session lifecycle, graceful drain |
-| Authority | Command validation, movement and hit validation, lag compensation, server fog of war |
+| Authority | [Authority profiles, per-field visibility](35-client-server-models.md), command validation, movement and hit validation, lag compensation, server fog of war |
 | Replication | Delta compression, relevancy, priority and bandwidth budgets, interest management |
 | Scale | Zones, instancing, phasing, entity hand-off, replication layer, time dilation |
 | Reliability | Crash replacement, reconnect, state recovery, tick budget enforcement |

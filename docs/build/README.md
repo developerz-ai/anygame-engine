@@ -16,6 +16,8 @@ The order of work. The order is chosen so there is a shippable, useful engine at
 | 7 | [MMO](phase-7-mmo.md) | `net.mmo`: replication layer, multi-server worlds; `kit.mmo` | Persistent scale |
 | Continuous | [Continuous](continuous.md) | CLI, MCP interface, live viewer, modding and workshop, docs, conformance suites | AI-first and no-fork |
 
+**Start here:** [how we work](how-we-work.md), and current progress in [status.yml](status.yml).
+
 Client and server primitives per phase: [primitives by phase](primitives-by-phase.md).
 
 Before Phase 0 code starts, settle [open questions](open-questions.md).

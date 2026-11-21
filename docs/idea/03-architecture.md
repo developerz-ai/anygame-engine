@@ -23,6 +23,6 @@ Rails won by making the common path one command and the uncommon path possible. 
 | iOS | Metal | Static linking only; scripts run interpreted or ahead-of-time compiled, since iOS forbids JIT |
 | Android | Vulkan | Thermal and battery governor; optional compatibility renderer for old devices |
 | Consoles | Vendor APIs | Shipped as private packages under NDA; proves the platform layer is a plugin |
-| Web | WebGPU + WASM | Optional package, 2D and light 3D |
+| Web | WebGPU + WASM | Optional package, 2D and light 3D. The kernel compiles to `wasm32` from Phase 0 ([platforms](30-platforms.md)) |
 
 One shader source language (Slang or HLSL) cross-compiles to DXIL, SPIR-V and Metal. Three renderer tiers (mobile forward, desktop clustered, high-end virtual geometry with ray tracing) share the same materials and scene data, so one project scales from a phone to a high-end PC.

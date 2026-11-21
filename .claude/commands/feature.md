@@ -16,7 +16,7 @@ $ARGUMENTS
 3. Write: design goes in `docs/idea/`, sequence and exit checks in `docs/build/`.
 4. Add new docs to the folder `README.md`.
 5. Gate:
-   - Every relative link resolves.
+   - `bin/check` passes.
    - Claims about other engines are dated and sourced, or marked unverified.
    - Targets are labelled as targets.
    - No secrets, private hostnames, client names, leaked or decompiled material.

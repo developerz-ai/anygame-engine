@@ -8,7 +8,7 @@
 2. `physics2d.kinematic`, input with buffering, audio playback and buses.
 3. Lua VM plugin with quotas and schema-generated bindings.
 4. Retained UI and immediate-mode debug UI.
-5. Asset cooking and hot reload.
+5. Asset cooking, hot reload, and the [resource lifecycle](../idea/34-resource-lifecycle.md): on-demand loading, caching, eviction.
 6. `kit.platformer2d` with a small complete game.
 7. Android and iOS, with static linking on iOS.
 
@@ -19,4 +19,6 @@
 - Empty 2D shipped binary is under 5 MB and contains no 3D, navmesh or netcode symbols.
 - Idle memory for an empty project is under 30 MB.
 - 100,000 simple moving sprites hold 60 fps on a mid-range phone.
+- Eviction chaos mode runs the sample game with no crash or stale handle.
+- Memory returns to baseline after repeated level changes.
 - Script reload takes under 1 s and C++ module reload under 5 s.

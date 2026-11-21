@@ -23,4 +23,5 @@
 - Loading old data runs its migration and drops no fields.
 - `ag describe` emits the full schema as JSON.
 - All checks pass in CI on Windows, Linux and macOS.
+- The kernel compiles to `wasm32` and passes its headless tests in thread-only mode, with no `mmap` or fibre dependency.
 - Kernel stays within the 30k-line budget.

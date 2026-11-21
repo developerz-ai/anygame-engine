@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: 'en-US'
+tone_instructions: >-
+  Terse and concrete. Cite the rule's file. Skip what bin/check catches. Flag invented facts,
+  targets written as measurements, and anything that makes a tool mandatory for a game.
+reviews:
+  profile: 'assertive'
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: false
+  auto_review:
+    enabled: true
+    drafts: false
+    base_branches: ['main']
+  path_instructions:
+    - path: 'docs/idea/**'
+      instructions: >-
+        Design only. Must follow docs/idea/01-thesis.md. Claims about other engines are dated and
+        sourced, or marked unverified. Targets are labelled as targets. Named games are references:
+        flag anything that recreates one. Flag leaked or decompiled material as a blocker.
+    - path: 'docs/build/**'
+      instructions: >-
+        Sequence and checks only. Each exit check must be observable, with a number or a test.
+        Flag contradictions with docs/idea and unresolved items missing from open-questions.md.
+    - path: 'docs/idea/31-no-regrets.md'
+      instructions: >-
+        Public promises. Flag any weakening, and any promise stated as true before a test exists.
+    - path: 'docs/idea/19-companion-tools.md'
+      instructions: >-
+        Every tool stays optional, partnerships stay disclosed, and private projects are not named.
+    - path: 'scripts/**'
+      instructions: >-
+        Bun and TypeScript. No runtime dependencies. Failures must be reported, never swallowed. Never print a secret value.
+    - path: '.github/workflows/**'
+      instructions: >-
+        Actions pinned to a full SHA, least-privilege permissions, and CI runs bin/check unchanged.

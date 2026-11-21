@@ -20,4 +20,6 @@
 - Empty 3D shipped binary is under 25 MB.
 - A dedicated server runs headless with no render, audio or input modules.
 - Headless bots complete a full `kit.fps` match in CI.
-- The server sends a client no state that client cannot perceive.
+- The server sends a client no state that client cannot perceive, proven by a packet audit that includes sounds and effects.
+- A client reconnects mid-match with correct state.
+- A modified bot client sending impossible commands gains nothing.
