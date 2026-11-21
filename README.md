@@ -10,6 +10,10 @@ AnyGame is an open-source game engine design: a roughly 30k-line C++23 kernel pl
 
 > 🚧 **Status: design stage.** This repo currently holds the architecture and build plan. There is no engine code to run yet, and every performance number is a target.
 
+## 🏆 The goal
+
+**To become the best game engine in the world for building with coding agents.** We have not earned that yet. We will measure it with real games, and publish the results.
+
 ## 🧠 The idea
 
 Monolithic engines bake in one answer to four questions, and each answer rules out whole genres. AnyGame makes all four swappable modules:
@@ -83,6 +87,10 @@ $ ag query "Player.Transform, Player.Velocity" --at tick=120
 | 5 | Large worlds, `kit.openworld`, `kit.racing` |
 | 6 | High-end rendering, motion matching, crowds |
 | 7 | `net.mmo`, `kit.mmo` |
+
+## 🤖 Backed by developerz.ai
+
+AnyGame is built with AI agents and supported by [developerz.ai](https://www.developerz.ai), alongside open-source tools like [Ultimate](https://github.com/developerz-ai/ultimate), [ts23d](https://github.com/developerz-ai/ts23d) and [wurk](https://github.com/developerz-ai/wurk). All of them are [optional](docs/idea/19-companion-tools.md). The maintainer policy is public in [`.dz/`](.dz/maintainer/maintainer.yml).
 
 ## 🤝 Contributing
 
