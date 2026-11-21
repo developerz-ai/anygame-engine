@@ -1,6 +1,6 @@
-# 💻 30. Platform playbook: Linux, Windows, macOS, Android, iPhone
+# 💻 30. Platform playbook: Linux, Windows, macOS, Android, iPhone, browser
 
-**One project, five first-class targets.** Game code never touches an OS API. The `platform.*` and `rhi` ports hide the differences, and this page tells an agent what is different when it must care.
+**One project, six targets: five native plus the browser.** Game code never touches an OS API. The `platform.*` and `rhi` ports hide the differences, and this page tells an agent what is different when it must care.
 
 Store and OS rules change, so re-check linked pages before a release. Rules with a link were checked on 2026-11-21 from search extracts of official pages. Unlinked entries are recalled and need confirming on real hardware. **None of this has run in AnyGame yet.**
 
@@ -32,6 +32,7 @@ Store and OS rules change, so re-check linked pages before a release. Rules with
 | **Paths go through `platform.fs`** | Sandboxes differ on each OS |
 | **No fixed thread count or affinity assumptions** | Hybrid cores everywhere |
 | **Handle lost device and lost surface** | GPU reset, driver update, app switch |
+| **Do not assume threads, fibres, `mmap` or dynamic loading** | The browser lacks or limits all four |
 | **CI builds every target on each PR, and tests on real devices nightly** | A port left for later never catches up |
 
 ## 🐧 Linux
@@ -99,6 +100,35 @@ Store and OS rules change, so re-check linked pages before a release. Rules with
 | UI | Safe areas, notch and Dynamic Island, touch controls, game controller support |
 | Frame rate | Support ProMotion and low power mode |
 | Ship | TestFlight, then App Store. Check regional store rules |
+
+## 🌐 Browser (WebAssembly + WebGPU)
+
+Build with Emscripten. **The browser shapes the kernel, so it must compile to `wasm32` from Phase 0**, even though the full web package ships later. Expect 2D and light 3D first.
+
+Support changes quickly. Feature-detect at startup, and never select by browser name.
+
+| Topic | State or rule |
+|---|---|
+| Graphics | `rhi.webgpu`. [WebGPU ships in all major browsers](https://web.dev/blog/webgpu-supported-major-browsers), with gaps reported in late 2025 on Linux and some Android setups. Keep a WebGL 2 adapter as an optional 2D fallback |
+| Shaders | Compile to WGSL at build time. No shader compiler in the download |
+| Threads | Need `SharedArrayBuffer`, so the host [must send COOP and COEP headers](https://emscripten.org/docs/porting/pthreads.html). `ag publish` sets them or warns. Portals that cannot set them get the single-thread build |
+| **Fibres** | [Emscripten fibres require Asyncify](https://emscripten.org/docs/api_reference/fiber.h.html), which grows code. Default to the **thread-only job mode** on web |
+| Main thread | Must never block. Run the simulation in a worker and yield to the browser each frame |
+| **Memory** | One linear heap in 64 KB pages. No reserve-and-commit, so arenas take fixed blocks from a page allocator |
+| Address space | `wasm32` by default. [Memory64 support was uneven](https://platform.uno/blog/state-of-webassembly-2024-2025/) as of the last check, so do not depend on it |
+| Plugins | Static link, like iOS. Scripts and data load at runtime |
+| Script VM | Interpreter. No JIT inside WebAssembly |
+| Exceptions | Off, matching runtime rules |
+| SIMD | Highway's WebAssembly SIMD target |
+| Networking | No raw UDP. Use [WebTransport](https://developer.mozilla.org/en-US/docs/Web/API/WebTransport), Baseline since March 2026, with WebSocket fallback. WebRTC for peer-to-peer |
+| Rollback and lockstep | Possible, but test under real browser timers and background-tab throttling |
+| Audio | AudioWorklet. Starts only after a user gesture |
+| Input | Pointer Lock, Gamepad API, touch. Browser shortcuts may steal keys |
+| Saves | Origin Private File System or IndexedDB. Storage can be evicted, so offer cloud saves or export |
+| Lifecycle | Hidden tabs throttle timers. Pause, then resync on return. Handle GPU device loss |
+| Size | First load is the game's front door: Brotli, split modules, stream content on demand |
+| Tools | Browser DevTools, Tracy where supported, native build for deep profiling |
+| Ship | Static hosting, CDN, itch.io, web portals, installable PWA |
 
 ## Agent defaults when porting
 

@@ -33,6 +33,6 @@ The AnyGame architecture blueprint, one section per file. Blueprint date: 2026-1
 | 27 | [The flywheel](27-flywheel.md) | How each game built makes the engine better for the next |
 | 28 | [Libraries and profilers](28-libraries-and-profilers.md) | Picking an allocator, library or profiler |
 | 29 | [C++ decisions](29-cpp-decisions.md) | Writing any C++: the answers are already chosen |
-| 30 | [Platforms](30-platforms.md) | Anything OS-specific: Linux, Windows, macOS, Android, iPhone |
+| 30 | [Platforms](30-platforms.md) | Anything OS-specific: Linux, Windows, macOS, Android, iPhone, browser |
 | 31 | [No regrets](31-no-regrets.md) | Any choice affecting licensing, lock-in, upgrades or trust |
 | | [Sources](sources.md) | Checking a claim |

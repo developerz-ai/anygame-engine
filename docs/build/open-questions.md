@@ -10,6 +10,7 @@ Conflicts and gaps found while splitting the blueprint. The idea docs keep the o
 | 2 | Does the 30k-line budget cover the reflection tool and `ag`? | Not stated | Runtime kernel only. Tools get their own budget |
 | 3 | Which build system and compilers? | The blueprint assumed C++ modules, but no build system or minimum compiler is named. Modules must work on every platform in [section 3](../idea/03-architecture.md) | Headers plus PCH by default, named modules opt-in per package ([C++23 craft](../idea/16-cpp23-craft.md)). Confirm on MSVC and Apple Clang, which are not yet tested |
 | 4 | How strong is the determinism promise? | [Kernel](../idea/04-kernel.md) allows fixed-point or strict IEEE. [Risks](../idea/14-risks.md) says fixed-point or software float | Decide per guarantee: same-binary replay first, cross-platform only with fixed-point or software float |
+| 16 | How does the kernel run on WebAssembly? | The blueprint assumes fibres and virtual memory. Browsers offer neither directly | Thread-only job mode and a page-allocator backend for arenas, proven in Phase 0 ([platforms](../idea/30-platforms.md)) |
 
 ## Blocks a later phase
 

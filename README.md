@@ -36,7 +36,7 @@ Monolithic engines bake in one answer to four questions, and each answer rules o
 - ♻️ **No reinventing the wheel:** agents start from proven blocks, spend their effort on the game, and improve a block when they can prove it.
 - 🔁 **Every game makes it better:** real problems become better blocks, errors and playbooks for the next game. Sharing is always opt-in.
 - 🤝 **No regrets:** MIT, no royalties, no lock-in, no forced upgrades, no hidden telemetry. You can always leave with everything.
-- 📱 **Five first-class platforms:** Linux, Windows, macOS, Android and iPhone from one project.
+- 📱 **Every platform:** Linux, Windows, macOS, Android, iPhone and the browser (WebAssembly + WebGPU) from one project.
 - 🙌 **Help, then get out of the way:** every kit, convention, gate and recommendation is a default your game can override.
 - 🛡️ **Fair play without ring-0:** server authority and server-side detection, no kernel anti-cheat.
 
