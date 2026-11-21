@@ -16,6 +16,7 @@ bin/check --json   # same, with docs errors as JSON on stdout
 bun run fmt        # format and fix scripts
 ```
 Repo tooling and the `ag` CLI are Bun + TypeScript, interpreted with no compile step. No Python. The engine itself is C++23.
+- **Bun is the glue, like bash.** It calls CMake, Ninja, compilers, tests, cookers and `ag-host`, and formats their results. Engine, simulation, rendering, cooking and game logic never live in TypeScript.
 - `scripts/*.ts`: thin entry points, each with a one-line doc comment. List them: `bun run help`.
 - `scripts/lib/**/*.ts`: reusable modules, one job each, under 200 lines, tested beside the source. Lift shared logic here.
 - Subprocesses go through `scripts/lib/run.ts`. Expected failures throw `ScriptError` with a code and `fix`. Every script supports `--json`.

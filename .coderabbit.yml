@@ -30,7 +30,7 @@ reviews:
         Every tool stays optional, partnerships stay disclosed, and private projects are not named.
     - path: 'scripts/**'
       instructions: >-
-        Bun and TypeScript. No runtime dependencies. Failures must be reported, never swallowed. Never print a secret value.
+        Bun and TypeScript as glue, like bash. No engine or game logic. No runtime dependencies. Failures must be reported, never swallowed. Never print a secret value.
     - path: '.github/workflows/**'
       instructions: >-
         Actions pinned to a full SHA, least-privilege permissions, and CI runs bin/check unchanged.
