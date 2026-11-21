@@ -29,6 +29,8 @@
 | Build big-battle combat | [Large-scale combat](15-large-scale-combat.md) | Combat blocks |
 | Add mods | [Scripting, modding, tools](11-scripting-modding-tools.md) | Packages |
 | Write engine C++ | [C++ decisions](29-cpp-decisions.md), [C++23 craft](16-cpp23-craft.md) | `bin/check` |
+| Speed up a hot path | [CPU, cache, SIMD, layout](50-cpu-cache-simd-layout.md) | `perf`, Highway |
+| Use a proven engine trick | [Veteran C++ tricks](51-veteran-cpp-tricks.md) | Kernel containers |
 | Choose a library or profiler | [Libraries and profilers](28-libraries-and-profilers.md) | One default per need |
 | Make it fast and small | [Small and fast](21-small-and-fast.md), [quality bar](32-quality-bar.md) | `ag profile` |
 | Port to a platform | [Platforms](30-platforms.md) | `platform.*` |

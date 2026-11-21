@@ -53,4 +53,6 @@ The AnyGame architecture blueprint, one section per file. Blueprint date: 2026-1
 | 47 | [Layers, rejoin, replay, spectate](47-layers-rejoin-replay-spectate.md) | World copies, reconnects, replays, live viewing |
 | 48 | [Tactical shooters](48-tactical-shooters.md) | Hit registration, fair shots, round-based play |
 | 49 | [Single-player, local and offline](49-single-player-offline.md) | Offline games, saves, split-screen, optional online |
+| 50 | [CPU, cache, SIMD, memory layout](50-cpu-cache-simd-layout.md) | Any hot path: data layout, cache use, vectorisation |
+| 51 | [Veteran C++ tricks](51-veteran-cpp-tricks.md) | Proven engine techniques, with when not to use them |
 | | [Sources](sources.md) | Checking a claim |

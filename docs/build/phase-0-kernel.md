@@ -1,6 +1,6 @@
 # Phase 0: Kernel
 
-**Proves:** the plugin model and hot reload. **Depends on:** decisions [003](../decisions/003-headers-default-modules-optin.md), [009](../decisions/009-kernel-targets-wasm32.md), [011](../decisions/011-kernel-scope-and-budget.md), [012](../decisions/012-determinism-guarantee-tiers.md). **Read:** [kernel](../idea/04-kernel.md), [extending](../idea/05-extending.md), [AI-first](../idea/12-ai-first.md), [C++ decisions](../idea/29-cpp-decisions.md), [C++23 craft](../idea/16-cpp23-craft.md), [libraries](../idea/28-libraries-and-profilers.md), [platforms](../idea/30-platforms.md), [architecture map](../idea/33-architecture-map.md), [concurrency](../idea/45-concurrency.md).
+**Proves:** the plugin model and hot reload. **Depends on:** decisions [003](../decisions/003-headers-default-modules-optin.md), [009](../decisions/009-kernel-targets-wasm32.md), [011](../decisions/011-kernel-scope-and-budget.md), [012](../decisions/012-determinism-guarantee-tiers.md). **Read:** [kernel](../idea/04-kernel.md), [extending](../idea/05-extending.md), [AI-first](../idea/12-ai-first.md), [C++ decisions](../idea/29-cpp-decisions.md), [C++23 craft](../idea/16-cpp23-craft.md), [libraries](../idea/28-libraries-and-profilers.md), [platforms](../idea/30-platforms.md), [architecture map](../idea/33-architecture-map.md), [concurrency](../idea/45-concurrency.md), [CPU, cache, SIMD](../idea/50-cpu-cache-simd-layout.md), [veteran C++ tricks](../idea/51-veteran-cpp-tricks.md).
 
 ## Build order
 
