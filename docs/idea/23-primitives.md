@@ -136,7 +136,7 @@ Blocks stay small and composable. A block never assumes a genre, and a game can 
 
 ## How a game uses them
 
-- **Single-player:** client only. No server or backend code ships.
+- **Single-player:** client only, fully offline. No server or backend code ships ([single-player and offline](49-single-player-offline.md)).
 - **Local or listen server:** the same simulation runs in a second World in-process.
 - **Dedicated server:** the same game without render, audio and input modules.
 - **Full online:** `ag dev` runs client, server, database and jobs on one machine, then deploys through fleet adapters.

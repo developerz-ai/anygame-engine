@@ -52,4 +52,5 @@ The AnyGame architecture blueprint, one section per file. Blueprint date: 2026-1
 | 46 | [Distributed servers](46-distributed-servers.md) | Server scaling, MMO zones, hand-off, persistence |
 | 47 | [Layers, rejoin, replay, spectate](47-layers-rejoin-replay-spectate.md) | World copies, reconnects, replays, live viewing |
 | 48 | [Tactical shooters](48-tactical-shooters.md) | Hit registration, fair shots, round-based play |
+| 49 | [Single-player, local and offline](49-single-player-offline.md) | Offline games, saves, split-screen, optional online |
 | | [Sources](sources.md) | Checking a claim |

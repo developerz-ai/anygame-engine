@@ -22,6 +22,7 @@
 | Use threads safely | [Concurrency](45-concurrency.md) | Job graph |
 | Scale servers or build an MMO | [Distributed servers](46-distributed-servers.md) | Zones, fleet, replication layer |
 | Build a large world | [World](07-world.md), [load, cache, unload](34-resource-lifecycle.md) | `world.*` |
+| Build a single-player or offline game | [Single-player, local and offline](49-single-player-offline.md) | Local World, saves |
 | Add multiplayer | [Client and server models](35-client-server-models.md), [online stack](09-online.md) | `net.*`, backend |
 | Add layers, rejoin, replays or spectators | [Layers, rejoin, replay, spectate](47-layers-rejoin-replay-spectate.md) | World copies, recorder, relay |
 | Build a competitive shooter | [Tactical shooters](48-tactical-shooters.md) | `kit.fps` |
@@ -43,6 +44,7 @@
 | How is state stored? | ECS, components, handles | Archetype ECS | [Kernel](04-kernel.md) |
 | How is memory managed? | Arenas, pools, tagged heaps | By lifetime | [C++ decisions](29-cpp-decisions.md) |
 | How do we use all the cores? | Job graph, workers | Declared reads and writes | [Concurrency](45-concurrency.md) |
+| Offline, local or online? | Modes in the manifest | Offline unless the game opts in | [Single-player and offline](49-single-player-offline.md) |
 | Who has authority? | `net.*`, authority profiles | Chosen by the kit | [Client and server](35-client-server-models.md) |
 | How does it scale? | Zones, instances, hand-off, fleet | Smallest step that fits | [Distributed servers](46-distributed-servers.md) |
 | How is data saved? | `persist`, migrations, snapshots | Versioned schemas | [Online stack](09-online.md) |

@@ -19,4 +19,5 @@
 - A retried job with the same idempotency key has no second effect.
 - Economy writes are ACID transactions and never travel through replicated state.
 - Matchmaking starts and drains a real dedicated server.
+- With every backend service down, an offline-capable game keeps playing and syncs later.
 - A load test runs headless bot clients from the same game code.
