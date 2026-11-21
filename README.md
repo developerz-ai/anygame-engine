@@ -80,6 +80,7 @@ $ ag query "Player.Transform, Player.Velocity" --at tick=120
 - 🚢 **[Idea to distribution](docs/idea/25-idea-to-distribution.md):** the full cycle, from pitch and project management to stores and live ops.
 - 🎯 **[Quality bar](docs/idea/32-quality-bar.md):** how performance and correctness are enforced.
 - 🧠 **[C++23 craft](docs/idea/16-cpp23-craft.md):** memory, RAII, sanitizers, testing.
+- 🏎️ **[CPU, cache, SIMD](docs/idea/50-cpu-cache-simd-layout.md)** and **[veteran C++ tricks](docs/idea/51-veteran-cpp-tricks.md):** how to make hot code fast, with measured examples.
 - 🧭 **[C++ decisions](docs/idea/29-cpp-decisions.md):** lookup tables, so any model makes the high-return choice.
 - 🧰 **[Libraries and profilers](docs/idea/28-libraries-and-profilers.md):** the best allocators, libraries and profilers, one default per need.
 - ⚡ **[Agent dev cycle](docs/idea/18-agent-dev-cycle.md):** from a human idea to a verified build.

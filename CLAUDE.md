@@ -22,7 +22,7 @@ Repo tooling and the `ag` CLI are Bun + TypeScript, interpreted with no compile 
 - Subprocesses go through `scripts/lib/run.ts`. Expected failures throw `ScriptError` with a code and `fix`. Every script supports `--json`.
 CI: `.github/workflows/ci.yml`, job `verify`. Review config: `.coderabbit.yml`.
 
-C++: follow `docs/idea/29-cpp-decisions.md` first (decisions already made), then `docs/idea/16-cpp23-craft.md`. Allocators, libraries, profilers: `docs/idea/28-libraries-and-profilers.md`. Optional companion tools are recommended, never required: `docs/idea/19-companion-tools.md`.
+C++: follow `docs/idea/29-cpp-decisions.md` first (decisions already made), then `docs/idea/16-cpp23-craft.md`. Hot paths: `docs/idea/50-cpu-cache-simd-layout.md`. Advanced techniques: `docs/idea/51-veteran-cpp-tricks.md`. Allocators, libraries, profilers: `docs/idea/28-libraries-and-profilers.md`. Optional companion tools are recommended, never required: `docs/idea/19-companion-tools.md`.
 
 ## Response rules
 - Lead with the answer or action. Terse. Paths and commands stay exact.

@@ -2,7 +2,7 @@
 
 **A model of any strength should write good engine C++ by following this page.** The highest-return decisions are made here, so an agent looks up the answer instead of reasoning it out. If a row fits, use it. Deviate only with a measurement or a stated reason.
 
-These defaults bind engine code. A game may choose differently ([rule 8](01-thesis.md#design-rules)). Deep reasoning: [C++23 craft](16-cpp23-craft.md). Library picks: [libraries and profilers](28-libraries-and-profilers.md). Proposed as of 2026-11.
+These defaults bind engine code. A game may choose differently ([rule 8](01-thesis.md#design-rules)). Deep reasoning: [C++23 craft](16-cpp23-craft.md). Library picks: [libraries and profilers](28-libraries-and-profilers.md). Hot paths: [CPU, cache, SIMD](50-cpu-cache-simd-layout.md). Advanced techniques: [veteran tricks](51-veteran-cpp-tricks.md). Proposed as of 2026-11.
 
 ## The ten highest-return rules
 
