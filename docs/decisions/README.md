@@ -20,3 +20,5 @@ One record per hard-to-reverse choice, with the rejected options. **Read before 
 | 014 | [Wrap proven solvers and script languages](014-wrap-solvers-and-languages.md) | accepted |
 | 015 | [Every kit and platform has a scheduled phase](015-kit-and-platform-schedule.md) | accepted |
 | 016 | [The engine builds with CMake and Ninja](016-cmake-ninja-build.md) | accepted |
+| 017 | [The `ag` CLI is an interpreted Bun wrapper](017-ag-cli-bun-wrapper.md) | accepted |
+| 018 | [Any game may use the AnyGame badge](018-anygame-badges.md) | accepted |

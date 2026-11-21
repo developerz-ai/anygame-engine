@@ -8,7 +8,6 @@ What is still undecided. Settled questions move to [decisions](../decisions/READ
 |---|---|---|---|
 | 9 | Phase 3 | Slang or HLSL as the shader source? | Spike both across D3D12, Vulkan, Metal and WebGPU before the render graph |
 | 13 | Each kit | What is each kit's original flagship game? | Name each sample game when its kit is planned |
-| 18 | Slice 0.08 | Is the `ag` CLI written in C++23 or Bun? | Recommended: C++23, so it ships as one binary with no runtime. Slice 0.08 assumes this |
 | 19 | Slice 0.01 | How does CI get the GCC 16 baseline? | Hosted runners may not include it. Slice 0.01 must pin a container or lower the baseline with evidence |
 
 ## Resolved
@@ -30,3 +29,4 @@ What is still undecided. Settled questions move to [decisions](../decisions/READ
 | 15 | When do quests, workshop and commerce land? | [Decision 015](../decisions/015-kit-and-platform-schedule.md) |
 | 16 | How does the kernel run on WebAssembly? | [Decision 009](../decisions/009-kernel-targets-wasm32.md) |
 | 17 | Should `kit.moba` join the kits? | Yes, [decision 015](../decisions/015-kit-and-platform-schedule.md) |
+| 18 | Is `ag` C++23 or Bun? | Bun, [decision 017](../decisions/017-ag-cli-bun-wrapper.md) |

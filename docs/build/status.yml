@@ -29,7 +29,6 @@ phases:
         status: not_started
       - file: phase-0-08-ag-cli.md
         status: not_started
-        blocked_by_open_questions: [18]
   - id: 1
     name: 2D stack
     doc: phase-1-2d.md
