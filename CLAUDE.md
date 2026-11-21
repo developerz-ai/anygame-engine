@@ -15,7 +15,7 @@ bin/check          # the gate CI runs: lint, types, tests, then links, anchors, 
 bin/check --json   # same, with docs errors as JSON on stdout
 bun run fmt        # format and fix scripts
 ```
-Repo tooling is Bun + TypeScript. No Python. The engine itself is C++23.
+Repo tooling and the `ag` CLI are Bun + TypeScript, interpreted with no compile step. No Python. The engine itself is C++23.
 - `scripts/*.ts`: thin entry points, each with a one-line doc comment. List them: `bun run help`.
 - `scripts/lib/**/*.ts`: reusable modules, one job each, under 200 lines, tested beside the source. Lift shared logic here.
 - Subprocesses go through `scripts/lib/run.ts`. Expected failures throw `ScriptError` with a code and `fix`. Every script supports `--json`.

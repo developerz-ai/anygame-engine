@@ -20,7 +20,7 @@ The incumbents are retrofitting this. Unity shipped an official MCP server expos
 
 ## The interface
 
-- **One command protocol, three front ends:** CLI (`ag`), an MCP server, and a read-mostly live viewer. The agent's interface is the primary one; humans use the same commands.
+- **One command protocol, three front ends:** a fast interpreted Bun CLI (`ag`, [decision 017](../decisions/017-ag-cli-bun-wrapper.md)), an MCP server, and a read-mostly live viewer. The agent's interface is the primary one; humans use the same commands.
 - **Playtest agents.** Bot clients driven by scripts or models run the game headless at many times real speed to find stuck spots, balance problems and crashes. Deterministic kits make every failure reproducible from seed plus input log.
 - **Generation hooks, not lock-in.** Asset import accepts any generator (textures, meshes, audio, animation, dialogue) through a provider interface, with provenance metadata recorded per asset for licensing and store disclosure.
 - **Runtime AI as a module.** `ai.llm` offers an async interface for NPC dialogue or directors, with on-device and server providers. It is optional and never in the deterministic simulation path.

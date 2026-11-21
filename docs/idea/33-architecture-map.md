@@ -27,7 +27,7 @@ Each layer depends only on the layers below it.
 │ PLATFORM        Linux  Windows  macOS  Android  iOS  browser   │
 └────────────────────────────────────────────────────────────────┘
 
-BESIDE THE STACK  ag CLI · MCP · live viewer · asset cooker · test bots
+BESIDE THE STACK  ag (Bun wrapper) · ag-host (native) · MCP · live viewer · asset cooker · test bots
                   separate processes, same public commands, never in the shipped binary
 ```
 
@@ -67,7 +67,8 @@ modules/<domain>/  implementations of a port, with AGENTS.md and tests
 adapters/<vendor>/ thin wrappers over third-party libraries
 blocks/<name>/     ready-made gameplay
 kits/<genre>/      template, sample game, playbook
-tools/ag/          CLI, MCP, generators
+tools/ag/          Bun + TypeScript CLI, MCP, generators, run with no compile step
+tools/ag-host/     small C++ host exposing the kernel to ag
 conformance/       one suite per port
 scripts/           Bun repo tooling, scripts/lib for shared code
 docs/              idea, build, decisions

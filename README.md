@@ -101,6 +101,16 @@ $ ag query "Player.Transform, Player.Velocity" --at tick=120
 
 AnyGame is built with AI agents. Once it is ready, [developerz.ai](https://www.developerz.ai) will maintain it. **Until then the project is not maintained, so issues and pull requests may go unanswered.** It sits alongside open-source tools like [Ultimate](https://github.com/developerz-ai/ultimate), [ts23d](https://github.com/developerz-ai/ts23d) and [wurk](https://github.com/developerz-ai/wurk), all [optional](docs/idea/19-companion-tools.md).
 
+## 🏷️ Built with AnyGame
+
+Any game built with AnyGame can show this badge. It is free, needs no approval, and is never required.
+
+```md
+[![Built with AnyGame](https://raw.githubusercontent.com/developerz-ai/anygame-engine/main/assets/badges/built-with-anygame.svg)](https://github.com/developerz-ai/anygame-engine)
+```
+
+[![Built with AnyGame](assets/badges/built-with-anygame.svg)](https://github.com/developerz-ai/anygame-engine)
+
 ## 🤝 Contributing
 
 Design feedback is welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) first, especially the clean-room policy.

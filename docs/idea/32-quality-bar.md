@@ -81,7 +81,14 @@ No engine can honestly promise zero bugs. It can make whole classes impossible, 
 | Reference games set the bar | Each kit's sample game must be something we are proud to show |
 | Agents push back honestly | An agent reports a weak result, instead of calling it finished |
 
-**Optional "Verified on AnyGame" badge:** a game may earn it by publishing a passing scorecard from a reproducible build. It is never required, and there is no fee. Games without it are just as welcome, and no game must display our name ([no regrets](31-no-regrets.md)).
+**Badges, always optional** ([decision 018](../decisions/018-anygame-badges.md)):
+
+| Badge | Who can use it | What it means |
+|---|---|---|
+| ![Built with AnyGame](../../assets/badges/built-with-anygame.svg) | **Any game** built with AnyGame, with no approval or fee | This game uses AnyGame. No quality claim |
+| Verified on AnyGame | A game that publishes a passing scorecard from a reproducible build | It met the published bar for that version |
+
+No game must display either badge or our name ([no regrets](31-no-regrets.md)). `ag badge` will print the markdown or image for a game.
 
 ## Definition of done for an agent
 
