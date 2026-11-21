@@ -8,7 +8,7 @@ AnyGame is an open-source game engine design: a roughly 30k-line C++23 kernel pl
 
 **Humans bring ideas. Coding agents build them.** AnyGame is designed so an agent can create any kind of 2D or 3D game, with every part pluggable, extendable and replaceable. Think [Ultimate](https://github.com/developerz-ai/ultimate), but for games.
 
-> 🚧 **Status: design stage.** This repo currently holds the architecture and build plan. There is no engine code to run yet, and every performance number is a target.
+> 🚧 **Status: design stage.** This repo currently holds the architecture and build plan. There is no engine code to run yet, every performance number is a target, and the project is not maintained until it is ready.
 
 ## 🏆 The goal
 
@@ -90,7 +90,7 @@ $ ag query "Player.Transform, Player.Velocity" --at tick=120
 
 ## 🤖 Backed by developerz.ai
 
-AnyGame is built with AI agents and supported by [developerz.ai](https://www.developerz.ai), alongside open-source tools like [Ultimate](https://github.com/developerz-ai/ultimate), [ts23d](https://github.com/developerz-ai/ts23d) and [wurk](https://github.com/developerz-ai/wurk). All of them are [optional](docs/idea/19-companion-tools.md). The maintainer policy is public in [`.dz/`](.dz/maintainer/maintainer.yml).
+AnyGame is built with AI agents. Once it is ready, [developerz.ai](https://www.developerz.ai) will maintain it. **Until then the project is not maintained, so issues and pull requests may go unanswered.** It sits alongside open-source tools like [Ultimate](https://github.com/developerz-ai/ultimate), [ts23d](https://github.com/developerz-ai/ts23d) and [wurk](https://github.com/developerz-ai/wurk), all [optional](docs/idea/19-companion-tools.md).
 
 ## 🤝 Contributing
 

@@ -61,7 +61,7 @@ These bind this project's own code, samples and kits. They do not police games b
 - **Do not build:** a new programming language, VCS, physics solver from scratch, DCC tool, or second object model beside the ECS.
 
 ## Maintenance
-Supported by developerz.ai. Policy: `.dz/maintainer/maintainer.yml`. No policy line relaxes a rule in this file.
+Not maintained until the engine is ready. Do not add `.dz/` or enable the developerz.ai maintainer before the owner says so.
 
 ## Git
 - Branch from `main`. Conventional commits (`docs(build): ...`). One concern per PR.

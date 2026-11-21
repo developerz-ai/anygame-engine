@@ -1,6 +1,6 @@
 # 🤝 Contributing
 
-AnyGame is at the design stage. The most useful contributions today are corrections, sourced evidence, and answers to [open questions](docs/build/open-questions.md).
+AnyGame is at the design stage and is not maintained until it is ready, so issues and pull requests may go unanswered. The most useful contributions today are corrections, sourced evidence, and answers to [open questions](docs/build/open-questions.md).
 
 ## 🧼 Clean-room policy
 
